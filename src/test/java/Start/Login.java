@@ -21,12 +21,12 @@ public class Login {
                 then().log().all().assertThat().statusCode(200);
 
         given().header("Content-Type","application/json").header("Bypass-W3villa-Areyxukcyb",true).header("Device-Type","WEB")
-                .body(userpayload.intiateloginpayload(parentemail,""))
+                .body(userpayload.intiateloginpayload(parentemail,"Test@123"))
                 .when().patch("/writer/v2/user/email/initiatelogin").then().log().all().assertThat().statusCode(200);
 
 
         given().header("Content-Type","application/json").header("Bypass-W3villa-Areyxukcyb",true).header("Device-Type","WEB")
-                .body(userpayload.loginpayload(parentemail,""))
+                .body(userpayload.loginpayload(parentemail,"Test@123"))
                 .when().patch("/writer/user/email/login").then().log().all().assertThat().statusCode(200);
 
     }
