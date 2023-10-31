@@ -13,7 +13,7 @@ public class Login {
         String parentemail=scanner.next();
 
 
-        RestAssured.baseURI="https://quickdev1.super.one";
+        RestAssured.baseURI="https://quickdev3.super.one";
 
         //User Status Check
         given().header("Content-Type","application/json").header("Bypass-W3villa-Areyxukcyb",true).header("Device-Type","WEB")
