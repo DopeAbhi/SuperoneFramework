@@ -15,7 +15,7 @@ public class Login {
 
         RestAssured.baseURI="https://quickdev3.super.one";
 
-        //User Status Check
+        //User Status Check api
         given().header("Content-Type","application/json").header("Bypass-W3villa-Areyxukcyb",true).header("Device-Type","WEB")
                 .body(userpayload.userstatuspayload(parentemail)).when().post("/writer/v3/user/checkAccountStatus").
                 then().log().all().assertThat().statusCode(200);
