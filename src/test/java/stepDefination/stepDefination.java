@@ -2,6 +2,7 @@ package stepDefination;
 
 
 import Payloads.userpayload;
+import Resources.APIResources;
 import Resources.Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -23,15 +24,19 @@ public class stepDefination extends Utils {
     RequestSpecification requestSpecification;
     ResponseSpecification responseSpecification;
      Response response;
+
     @Given("User Status Payload with Parent_Email$")
     public void user_status_payload_with_parent_email() throws IOException {
        requestSpecification= given().spec(requestSpecification())
                 .body(userpayload.userstatuspayload("max600@y.com"));
 
     }
-    @When("user calls with Post http request$")
-    public void user_calls_with_post_http_request() {
-        response=requestSpecification.when().post("/writer/v3/user/checkAccountStatus");
+    @When("user calls with {string} http request")
+    public void userCallsWithHttpRequest(String resources) {
+        APIResources resourcesAPI=APIResources.valueOf(resources); //enum implementation
+        System.out.println(resourcesAPI.getResource());
+
+        response=requestSpecification.when().post(resourcesAPI.getResource());
     }
     @Then("the API call got success with status code$")
     public void the_api_call_got_success_with_status_code() {
@@ -39,4 +44,7 @@ public class stepDefination extends Utils {
     }
 
 
-}
+
+
+    }
+

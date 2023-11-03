@@ -1,0 +1,23 @@
+Request method:	POST
+Request URI:	https://quickdev3.super.one/writer/v3/user/checkAccountStatus
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "countryCode": "+91",
+    "countryName": "India",
+    "deviceToken": "",
+    "deviceType": "WEB",
+    "email": "max600@y.com",
+    "lang": "en",
+    "referenceId": "",
+    "subscribeMarketing": true
+}
