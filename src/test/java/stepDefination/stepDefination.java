@@ -25,8 +25,8 @@ public class stepDefination extends Utils {
     ResponseSpecification responseSpecification;
      Response response;
 
-    @Given("User Status Payload with Parent_Email$")
-    public void user_status_payload_with_parent_email() throws IOException {
+    @Given("User Status Payload with Email$")
+    public void user_status_payload_with_email() throws IOException {
        requestSpecification= given().spec(requestSpecification())
                 .body(userpayload.userstatuspayload("max600@y.com"));
 
@@ -45,6 +45,26 @@ public class stepDefination extends Utils {
 
 
 
+    @Given("User Login with Email")
+    public void userLoginWithEmail() throws IOException {
+        requestSpecification= given().spec(requestSpecification())
+            .body(userpayload.userstatuspayload("max600@y.com"));
+
+    }
+
+    @When("Login with Patch {string} request")
+    public void loginWithPatchRequest(String resources) throws IOException {
+
+        APIResources resourcesAPI=APIResources.valueOf(resources); //enum implementation
+        System.out.println(resourcesAPI.getResource());
+        response=requestSpecification.when().patch(resourcesAPI.getResource());
+
+    }
+    @Then("the API call got success with status code$")
+    public void the_api_call_got_success_status_code()
+    {
+        assertEquals(response.getStatusCode(),200);
+    }
 
     }
 

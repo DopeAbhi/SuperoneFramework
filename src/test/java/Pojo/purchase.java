@@ -1,6 +1,6 @@
 package Pojo;
 
-public class purchasepayload {
+public class purchase {
 
 
     public boolean isStore() {

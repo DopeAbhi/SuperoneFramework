@@ -4,7 +4,7 @@ public class Packpurchasepayload {
     public  static String pack_purchase_payload(int packnumber)
     {
 
-//    purchasepayload p ayload=new purchasepayload();
+//    purchase p ayload=new purchase();
 //    payload.setisStore(true);
 //    payload.setisUpgrade(false);
 //    payload.setpackagePaymentType("CASH");
