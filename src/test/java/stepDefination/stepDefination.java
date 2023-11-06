@@ -39,7 +39,8 @@ public class stepDefination extends Utils {
         response=requestSpecification.when().post(resourcesAPI.getResource());
     }
     @Then("the API call got success with status code$")
-    public void the_api_call_got_success_with_status_code() {
+    public void the_api_call_got_success_with_status_code()
+    {
         assertEquals(response.getStatusCode(),200);
     }
 
@@ -60,7 +61,7 @@ public class stepDefination extends Utils {
         response=requestSpecification.when().patch(resourcesAPI.getResource());
 
     }
-    @Then("the API call got success with status code$")
+    @Then("the API call got success status code$")
     public void the_api_call_got_success_status_code()
     {
         assertEquals(response.getStatusCode(),200);
