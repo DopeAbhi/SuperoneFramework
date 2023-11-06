@@ -4,6 +4,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 
 import java.io.FileInputStream;
@@ -38,5 +39,11 @@ public class Utils {
             return req;
         }
         return req;
+    }
+    public static JsonPath rawtojson(String response)
+    {
+        JsonPath js1=new JsonPath(response);
+        return js1;
+
     }
 }
