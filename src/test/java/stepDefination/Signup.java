@@ -33,7 +33,7 @@ RequestSpecification requestSpecification;
 
 
 //Verify User
-           String r= given().spec(requestSpecification)
+           String verify= given().spec(requestSpecification)
     .body(userpayload.verifyuserpayload(vertoken))
             .when().post("/writer/v3/user/verifyUserToken")
     .then().log().all().assertThat().statusCode(200);
