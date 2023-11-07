@@ -16,13 +16,13 @@ Body:
     "countryName": "India",
     "deviceToken": "",
     "deviceType": "WEB",
-    "email": "max600@y.com",
+    "email": "max6400@y.com",
     "lang": "en",
     "referenceId": "",
     "subscribeMarketing": true
 }
 HTTP/1.1 200 OK
-Date: Mon, 06 Nov 2023 15:10:07 GMT
+Date: Tue, 07 Nov 2023 11:18:54 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -30,29 +30,29 @@ Access-Control-Allow-Origin: undefined
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
 Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
-ETag: W/"6a-V41JnFiyZDW9EoQJRrTteBWp4Eo"
-Set-Cookie: sails.sid=s%3AFoMXQcEtbTjNUR_3ypODF8VVtDmuHExM.XyknVuSt36AZ1smiVOxI30d4iruCN%2F64QK11ElOfQCY; Path=/; HttpOnly
+ETag: W/"92-MSWINLOavQdxcpl3g8engcTB+eM"
+Set-Cookie: sails.sid=s%3A1R1uNUq3xNZLa9knJnpHJDDXjJt-0NPd.oQJjxhfR%2FR1C6cX%2FD3MLlzqkzstWxGR2DNLB9sQXMFQ; Path=/; HttpOnly
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VD7nwGbInVp0jZQFhchgYVe72XGvrEqkrvzaXt%2BnLIYcmhCHHZIzhHE%2FANXTJKJI4KgYntoLMgq69uJyLGO7nMHVuosBiM4L%2FK1tJsw2dwVrP4ukQ4y25e2PmE2QPRf2Uv6Srxb3"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=d8iM3Tiz5fQ7jo6gNOzrl3top1P%2F%2B4MS%2BJwtBkf8D7%2FGydIFiQqxMqKV%2FUB5Yrr2orSKICkK8%2BqPCNB5aWPpiDOlHSGCgkKJTwV%2Basu6Fc11AcvLZShayMMZ7FU5617DVsRJpGG2"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 821e42e9be756bf3-SIN
+CF-RAY: 82252d9b7de431ee-BOM
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 {
-    "message": "User found.",
+    "message": "Verification link sent successfully on your email.",
     "success": true,
     "display": false,
     "data": {
-        "islogin": true
+        "islogin": false
     }
 }
-Request method:	PATCH
-Request URI:	https://quickdev3.super.one/writer/user/email/login
+Request method:	GET
+Request URI:	https://quickdev3.super.one/reader/getVerificationHistory?password=711b525c69e8b0edc6221518b8ff878f
 Proxy:			<none>
 Request params:	<none>
-Query params:	<none>
+Query params:	password=711b525c69e8b0edc6221518b8ff878f
 Form params:	<none>
 Path params:	<none>
 Headers:		Device-Type=WEB
@@ -60,19 +60,9 @@ Headers:		Device-Type=WEB
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "countryCode": "+91",
-    "countryName": "India",
-    "deviceToken": "",
-    "deviceType": "WEB",
-    "email": "max600@y.com",
-    "lang": "en",
-    "referenceId": "",
-    "subscribeMarketing": true
-}
+Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 06 Nov 2023 15:10:08 GMT
+Date: Tue, 07 Nov 2023 11:18:55 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -80,19 +70,321 @@ Access-Control-Allow-Origin: undefined
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
 Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
-ETag: W/"9c-KEoTHCKSzM0iWXvytP34E5ytlcE"
-Set-Cookie: sails.sid=s%3AiNaq22gR_4G9iDL-QByU5JrM5PBrGyaC.iV%2FosIg%2BKyijCREfyYlQbRPEhLwpG%2Fc0CVASQ8GbwSo; Path=/; HttpOnly
+X-Powered-By: Sails <sailsjs.com>
+ETag: W/"4007-3o2pqHo6hZ3zakf8tfvPykBL48I"
+Set-Cookie: sails.sid=s%3AI6txpoLc5bRMScmOPnNKRAFbPYioRUuC.TAbo5B3bSr8C3BIEv%2FLeR4FiTUF1JuaKCGSgGUPrsyc; Path=/; HttpOnly
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=QvHdkbtV4t9MUjePfHjXzrqM1MxwQcve7zfOaDxe2VgtSkadQcr4jUA4FkjUb%2BYT9lH53tvVe7rIfPK9zimXge06YiWQe9dlH2Ii3wLSZTNeAAp403U1%2FCl9cn1zN7dgL9vFG2Yc"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tWtwpa8vGDgiJMWtb16g08fP6LgCXNaHev%2B0PO4EJBVf5O5hzre%2BBKjc3tWpzimb3rE5K6N0pTFux0qAVbDqHckPrpx%2BB8s%2Bz0U%2FGQuf%2BAPhlW%2FFHgo9Vpygd0IsS3Tfen60yMD0"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 821e42efcf9841c7-BOM
+CF-RAY: 82252da2bf4c4186-BOM
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 {
-    "message": "Request processing error. (SUP001)",
-    "success": false,
+    "message": "Data found.",
+    "success": true,
     "display": false,
-    "data": "SUPERONE_ERROR Request processing error. (SUP001)"
+    "data": [
+        {
+            "id": 3703,
+            "otpReceiver": "max6400@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=956d72b1176bdb2a6f7154f230279075701412d80c5d2f16d76c6cc45fd948367943fd9b7c97e431c306cc032b4464b2752e27e9506bfe4857ae23145583011a",
+            "verifiedAt": null
+        },
+        {
+            "id": 3702,
+            "otpReceiver": "ubb19@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=1379344de7f3105afb4504cc4321eba5a7ac51d3d1e6a382abd123f344aefa7a0822d489c048b4c101264099fd672f5b33f89e3063ee9e9dc25dd73a8a61c1e6",
+            "verifiedAt": 1699354503326
+        },
+        {
+            "id": 3701,
+            "otpReceiver": "suerone@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=2f0ae04be3e5f188f4d45fa26093ea767b86c05a36504cc4fc213727ef683f0ce2b218f1eb278115a03cf47512d589ae4b2aa7961ebf8967177ef99000016c6a",
+            "verifiedAt": null
+        },
+        {
+            "id": 3700,
+            "otpReceiver": "superonenew@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=619e148388e13d7569b7de3b7c1d370a1b840b14f6b7eb4d0237c1e7549edafb61baf1f9e4203de4478c33b9f7a21f9916c79227576cf5913f274b5af6c654de",
+            "verifiedAt": 1699268728504
+        },
+        {
+            "id": 3699,
+            "otpReceiver": "test123456@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=adbeafa631eaf8ee8994c1a12dca3e45e9c9caea7ad42ae56e9a15b8f1557c6132523009de7a77f9609e10a7ce152464cb877ed95e119430be2f2a0a4def24b9",
+            "verifiedAt": null
+        },
+        {
+            "id": 3698,
+            "otpReceiver": "test11111@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=16b3a191a4c7e07f8c6117f4af858afd715fa8761776824de7a67cc2544fbc50fb8a1abc22bf90742c95471437b6d16dbe9731c8897feed8f59319540a131036",
+            "verifiedAt": 1699256127188
+        },
+        {
+            "id": 3697,
+            "otpReceiver": "ubb18@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=54e310f97c3257691ee776c5c2627f481a7d4e8d7c8abcc664108ca41905ffe980ea27b8cff630928b5bc0515f3d0457fc5da68c6ca83054f59397644ae8654a",
+            "verifiedAt": 1699011166783
+        },
+        {
+            "id": 3696,
+            "otpReceiver": "ubb17@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=1c9309a71ab60a61e457cd6d011a145c34ed2611c468ca98281eacc4ce888adb1039eeb09dee5ed5d7d09301481d46441efb6b9fd733466cb014738be0ff59ee",
+            "verifiedAt": 1699011051138
+        },
+        {
+            "id": 3695,
+            "otpReceiver": "ubb16@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=5dbdfc90548a9d1c77c4e75d8c673e127b8cbfe3477a1650bf8664785e8c147a20e9dd8e1c753f5e02f652275a404c8009505aeb9e8c11ce19d4b5826b4803df",
+            "verifiedAt": 1699010946094
+        },
+        {
+            "id": 3694,
+            "otpReceiver": "ubb15@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=581090cb615b0adcac76ecb55d81a88bd3345904bd8059cf66963068aaf95bb2d7837fc0279b7814de778ab55ed549ecf50054782ee091fdbbf6319603e2f1a2",
+            "verifiedAt": 1699010821986
+        },
+        {
+            "id": 3693,
+            "otpReceiver": "ubb14@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=c9f196e2c383d3692b59ee1e31feb8e6cf8787e18a4989daa4fd2aa73547989423adc581d386ad7b6fc8c32827820f10e971056a91357552b8a50875789538a4",
+            "verifiedAt": 1699010668933
+        },
+        {
+            "id": 3692,
+            "otpReceiver": "1536678@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=7ae3c128a9381435dd8271daa126c082c4bace051df457f908e46365b568bfb8c930a85068db3fcc3d32acdff0191a2c9692d6db7ebc62e5fc9e6405254ddfc9",
+            "verifiedAt": null
+        },
+        {
+            "id": 3691,
+            "otpReceiver": "ubb@t.in",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=65df6de791950e33b6b4e16f770f4da1c445ffda1148ccb9b17d5065d2738d0330ec2bf51eab1fc4d3f868867fb6be2ee756a7abdaa042fc5b578093578d8bbb",
+            "verifiedAt": null
+        },
+        {
+            "id": 3690,
+            "otpReceiver": "ubb13@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=3ec1ed128e1939872d7c55827f8fb6b1abac230f87a9b96ce05a8b04c34895771daa32664e08451d9b10ee030128c5296da213fbfcbc4bb8f876a077bc8a7dba",
+            "verifiedAt": null
+        },
+        {
+            "id": 3689,
+            "otpReceiver": "ubb@gmail.th",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=48aca3cbbc80222284f62aae77c7ee8559468327c3c1ac3ad7786348d61751f123c89d12b98f50a24d19666ae1254bc0ca033f28da791763683b1b8c71792329",
+            "verifiedAt": null
+        },
+        {
+            "id": 3688,
+            "otpReceiver": "ubb@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=fb4b8e4bfcd4a405a73a95a5a7753b9c9cae03c9297d20d89ef2d8f80f9030fa6ec8446eb5ff2259b7b36f0cc8df769fa29b4a07cf49d51b64d27e8c35ce3537",
+            "verifiedAt": null
+        },
+        {
+            "id": 3687,
+            "otpReceiver": "ubb1@gmail.coht",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=b1775295f7bb1b56686b268efbf91d2c3fac32e2e0ce6b6316b5c79000bdeafc2774a1f070f76451b632c208f81dfae74ed8eafa27deca6b667d42a98f18c8af",
+            "verifiedAt": null
+        },
+        {
+            "id": 3686,
+            "otpReceiver": "ubb1@gmail.cog",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=75188abe5a3ce079e6e1445a7b0b94f31a3491958c81c098da4377788f256f66992c9ab723e014cb21e86c1f32f08b9ed9cb5426231e90b134544da07b6a2dc3",
+            "verifiedAt": null
+        },
+        {
+            "id": 3685,
+            "otpReceiver": "ubb1@gmail.co",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=2f82cdc6c6cbab6482f0c28fb1448e3dfcb956a6b20cd5d00efebfdb262d00936033b304ed9bac119c70f60aa68f1c87c94f8a0427baf8375216a2bbb6f47e2a",
+            "verifiedAt": null
+        },
+        {
+            "id": 3684,
+            "otpReceiver": "ubbb1@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=b493d39eb7d9876b7aa923c65eaa65f34f4cc416d63e90afccabf755785d57c29a2ec68b487d5ca5a9d9d20ff22c5efed22400ffdaa447c7a0d130f7a2db75b1",
+            "verifiedAt": null
+        },
+        {
+            "id": 3683,
+            "otpReceiver": "ubb4@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ed325fac6b86dff2a5bb9e6bfbd17305cada28466e865e69bd69f54d9446070d03b3c6f5cb351d1f22a704ab4ee9d7f69894b382756f5b193d8c7b195daa7985",
+            "verifiedAt": null
+        },
+        {
+            "id": 3682,
+            "otpReceiver": "ubb13@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ecc792001ec9c7c5bece442d4ef3d9188d058aa8bda2130fa0f6225d629a2f2a7ec3856216c1a3f8a61b401700738816eae20de5563198a1695495544f46110e",
+            "verifiedAt": 1698909344645
+        },
+        {
+            "id": 3681,
+            "otpReceiver": "ubb12@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=be2381d689cbdb430db029a3e08c58a96f6c6c8d6204fcc690b840e062fcab562b582c85e33a05775282737ad43eb91079d06d55040063544b5f829b42d81893",
+            "verifiedAt": null
+        },
+        {
+            "id": 3680,
+            "otpReceiver": "ubb12@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ca90700a9a00fec0d8614ac9665b0b065f2513f2097f657a58f1336191690690b76b1df8b69f3d4797be70a6544edc8f9092cfc424b35885c7c43de8b02784c1",
+            "verifiedAt": 1698908638792
+        },
+        {
+            "id": 3679,
+            "otpReceiver": "ubb11@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=9c1ca98a745117753cefa4f29fe1f1352f28cd80429d861ff6b9f287a6c7215be78b7e283cd10b9eab9b3b4c6943a41c59e3e451f0621acd6686613d42ccf5df",
+            "verifiedAt": 1698908628003
+        },
+        {
+            "id": 3678,
+            "otpReceiver": "ubb10@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=888a3c8242c54f6eb53a2c8d3477409ec3b51e840221086fcb9ac662cfdd70ef1c1174c84fd13540e5fd45a7dbe009b55a99c8c9958863ed3f233bf59773e79a",
+            "verifiedAt": 1698908619169
+        },
+        {
+            "id": 3677,
+            "otpReceiver": "ubb9@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=c2c69639e6d3d7f0636e5f68672c3aab3971397f45697329a72a7ad300d1d142dd23cc633d0b3e5b8ace10bb8b8fd375145d86eb096020889bd654644f674ad8",
+            "verifiedAt": 1698908612099
+        },
+        {
+            "id": 3676,
+            "otpReceiver": "ubb8@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=6afa191a3477e40a4769f838e4391551cc8f3780cdd05660480ad32b10aa447a669a17833345853591366c9a2daabf8ea1c1817ead7a9d7435c3c27ee6e49bd7",
+            "verifiedAt": 1698908605270
+        },
+        {
+            "id": 3675,
+            "otpReceiver": "ubb7@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=776797a34d1822aa13c3ef21176511e9934b27b68d6ac690769c495a34095a2c9061b0fa100f293c28c0156f7dcbd3aa3645d681af5468ccc9195b5456f482d3",
+            "verifiedAt": 1698908596230
+        },
+        {
+            "id": 3674,
+            "otpReceiver": "ubb6@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=5b783b2271e353a7da8b53ac49775cd7c428419fc1e7943e7bc2cf24d72f8ebd810f3515ca0e3c42a0a6be9baf1fffaca9d6f2d108b1e521a9adfeba4f6b9a24",
+            "verifiedAt": 1698908588455
+        },
+        {
+            "id": 3673,
+            "otpReceiver": "ubb5@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=b8845536bf071e6b593ede056e98032e81d3a8c7f7b7504f969c485bc1b912248cd8c3d86f580e636e23d16eecf13b05c743f250c78df3b7b57c34f9acd2d67d",
+            "verifiedAt": 1698908579014
+        },
+        {
+            "id": 3672,
+            "otpReceiver": "ubb4@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=f64c91a8fb17601c76d4c9c05eadb4e1ff30e74da1d47c4ff2eb86e53e63406786dbf6ec47f86913a1534d5b0d9cd9804d5321637b368e51b7fa7232cb3a79f3",
+            "verifiedAt": 1698908570024
+        },
+        {
+            "id": 3671,
+            "otpReceiver": "ubb3@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=3b2560fbb0331ad604dced7ab080516d554b09aa5cff3f4881fd512be057537dba15e10169d3ec29f02980be24f5820579bbcba1df8d326180c192d4159553b2",
+            "verifiedAt": 1698908559275
+        },
+        {
+            "id": 3670,
+            "otpReceiver": "ubb2@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=bbd0c5cd6d96bf6e77b76eaa0ad1e3d3944dfe91191b1f513ded5ff926f8d04abc5c05fa8cca1beb5b61fbe8e058cd982a0f2ef97af04ead749a35de3cd5b566",
+            "verifiedAt": 1698908549163
+        },
+        {
+            "id": 3669,
+            "otpReceiver": "ubb1@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=92bf0db5fee53ca03e2a3ad2c3d34720df3b262462cb3fc07078460698df49ff91c5ab98cf316fe831146bc4ffcaf34830699b568326a9b5296eb8cf8bfd531b",
+            "verifiedAt": 1698908538602
+        },
+        {
+            "id": 3668,
+            "otpReceiver": "ub2@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=eb4889b3b67d49dce584947eeb6b860e76801af00c3d56b4ae04eb97ef26b05711fee19187283a89d0fded09ff92e609b0786b19c93dac35a27b6847a377e1af",
+            "verifiedAt": 1698908174940
+        },
+        {
+            "id": 3667,
+            "otpReceiver": "ub1@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=87811eacc1c0eabbec74191ac78883357fd546009604755d321e844c60f22029e5f94b2089557945c27b62c82a87ab90fd7da1767cce3aa36da10f48d570295c",
+            "verifiedAt": 1698907973519
+        },
+        {
+            "id": 3666,
+            "otpReceiver": "brat280@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=8c9d620ebbb5dd95a56901587779ac20ec5c249cc44be0dcb1934f4317edfdacf8f598030e4edf6c5ce20e4b1117d8659dc79618c7c651887030653169107a6e",
+            "verifiedAt": 1698828036347
+        },
+        {
+            "id": 3665,
+            "otpReceiver": "superone@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=c18e97f24bb37031f758828c6147e5d3df1a53d30e4891b897dfe91227a4e8553ff0874b1f86b4074078755b31c12e880eb2e1fce2e1edcbfb120173dba33b6c",
+            "verifiedAt": 1698826952863
+        },
+        {
+            "id": 3664,
+            "otpReceiver": "brat270@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=113fb76909d51970cbd6a012e75a9530b848c1a8d490940932b115fa758e5dd2fd925c3aa7897a7d5402421b674a97f2c0e6a765352579be92c87d16d6f50e77",
+            "verifiedAt": 1698822078692
+        },
+        {
+            "id": 3663,
+            "otpReceiver": "newsignup@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=65f9aadc48aac2e4c482010f4d58414750caec4174d800fe26ddbcb2323574eea9bc2fc2e53c36a730baa9f5d0fe1bfe3925ba9a0fbcc9e9c0c27fcceca30d0a",
+            "verifiedAt": 1698821906825
+        },
+        {
+            "id": 3662,
+            "otpReceiver": "require@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=8507424d1a8302c30151407d294e4b979ed6152a2cdbea0f01a7864ddc02c110b63c389a011acdafb50f73625ec91904e465dca4677b7fe09e45791516a96fd6",
+            "verifiedAt": 1698821824160
+        },
+        {
+            "id": 3661,
+            "otpReceiver": "brat260@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=c4744915c2c8b7364e806dcd0198f2b581309882980351d3ada96fe5283eb38d07ea874796c888dee11532b22531fc2ed845d6f6b5410595d931c4c88cb695b3",
+            "verifiedAt": 1698749511377
+        },
+        {
+            "id": 3660,
+            "otpReceiver": "brat250@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=424fc9fd3479c215afa5dbb9beb81b78d4a93a6b399d65b849efd4e3f67f720205d23a70e9434ee1e4295cd57e7614ab361e55406214d8aa3ff9ceb13252395f",
+            "verifiedAt": 1698748034967
+        },
+        {
+            "id": 3659,
+            "otpReceiver": "brat241@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=b779286c7f4a44cbc2d63a8024e4603952593df922c6dd8bba01c0a9f66beba16f38b8a606f64b5ab5f588ba92faf1e6da8fe9390dde08dc09929b4421df49e4",
+            "verifiedAt": 1698747253190
+        },
+        {
+            "id": 3658,
+            "otpReceiver": "brat240@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=054d00d0dd6aab099853e84076e35f7fa5bfc2ba1212e722058a5e9c9ae35018ee68cb0b3ad7a84c38fad81f1d1f08253b707c346f4511aa00d8397289adc2a3",
+            "verifiedAt": 1698733251722
+        },
+        {
+            "id": 3657,
+            "otpReceiver": "amrender.singh@w3villa.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=a2d74d3b9c0a454ae671b493c716765a3846eaa9387a3b503c6c571084982a08e00eb49ebd5a2c8d8a2839022fc1d6fa9497d88ab504b08b4383597fad7bbdb6",
+            "verifiedAt": null
+        },
+        {
+            "id": 3656,
+            "otpReceiver": "max500@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=582373b50c3f5fe30e36d4b54d020e01d815f15546012431030843a9e49ba8c607a48c3776f0959b7e355c0ae4d9c29e80372d0baf9e046a0363850dcdc4721f",
+            "verifiedAt": null
+        },
+        {
+            "id": 3655,
+            "otpReceiver": "max400@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=2962eefe566c8f9eab4cacd541eca4e2a1f33adfee15d903fba1b27cb27fe884f68f844d74d35930e16d9727856b6dea1642e49c3ce8e0f464ab7a2f8f8b04a5",
+            "verifiedAt": null
+        },
+        {
+            "id": 3654,
+            "otpReceiver": "brat222@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=1ddb7da9ff9dd8c14a2b1303a765414adf4fa57fccc13d862954daae2d7108cd691d287c775b521119a5df30d9d06d16a5d730bb42c16d5af5b4869dd9eedabf",
+            "verifiedAt": null
+        }
+    ]
 }
