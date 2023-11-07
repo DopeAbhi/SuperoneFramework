@@ -23,6 +23,8 @@ import static org.junit.Assert.assertEquals;
 public class Signup extends Utils {
 
 RequestSpecification requestSpecification;
+RequestSpecification requestSpec;
+    String vertoken;
 
 Response response;
 
@@ -53,34 +55,39 @@ Response response;
 
     @When("User call {string} with Get http request")
     public void userCallWithGetHttpRequest(String endurl) {
-        System.out.println(endurl);
+
         APIResources apiResources=APIResources.valueOf(endurl);
-        System.out.println(apiResources.getResource());
+
         response= requestSpecification.when().get(apiResources.getResource());
     }
     @Then("the API call got success with status code")
     public void theAPICallGotSuccessWithStatusCode() {
-        System.out.println(response.getBody());
-        assertEquals(response.getStatusCode(),200);
+   String verifyresponse= response.then().statusCode(200).extract().response().asString();
+    JsonPath js1 = Utils.rawtojson(verifyresponse);
+    String hash = js1.getString("data[0].verificationHash");
+
+     vertoken = hash.substring(67, hash.length());
+        System.out.println(vertoken);
     }
 
+    @Given("Verifying user with token")
+    public void verifyingUserWithToken() throws IOException {
+        requestSpecification=given().spec(requestSpecification()).body(userpayload.verifyuserpayload(vertoken));
+    }
 
+    @When("Call {string} with Post http request")
+    public void callWithPostHttpRequest(String endurl) {
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response= requestSpecification.when().get(apiResources.getResource());
+    }
+    @Then("Verification of status code {int}")
+    public void verificationOfStatusCode(int arg0) {
+        assertEquals(response.getStatusCode(),arg0);
 
-
-    //Verification URL
-
-
-//    String verifyresponse = given().queryParam("password", "711b525c69e8b0edc6221518b8ff878f")
-//            .when().get("/reader/getVerificationHistory")
-//            .then().statusCode(200).extract().response().asString();
-//    JsonPath js1 = Utils.rawtojson(verifyresponse);
-//    String hash = js1.getString("data[0].verificationHash");
-//
-//    String vertoken = hash.substring(67, hash.length());
-
+    }
 
 //Verify User
-//           String verify= given().spec(requestSpecification)
+//           String verify= given().spec(requestSpecification())
 //    .body(userpayload.verifyuserpayload(vertoken))
 //            .when().post("/writer/v3/user/verifyUserToken")
 //    .then().log().all().assertThat().statusCode(200);
