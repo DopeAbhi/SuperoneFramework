@@ -6,10 +6,10 @@ Feature: Validating login
     When user calls "initiate_login" with Post http request
     Then the API call got success with status code 200
    Examples:
-     | Email |
-     |max6505@y.com|
+     | Email         |
+     | max6506@y.com |
 
-   Scenario: Get Verification Url
+  Scenario: Get Verification Url
    Given User verification url
    When User call "get_verification_url" with Get http request
    Then the API call got success with status code
