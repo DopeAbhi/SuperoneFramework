@@ -1,13 +1,13 @@
 Feature: Validating login
 
- Scenario Outline: Signup
+ Scenario Template: Signup
 
     Given User Status Payload with "<Email>"
     When user calls "initiate_login" with Post http request
     Then the API call got success with status code 200
    Examples:
      | Email         |
-     | max6506@y.com |
+     | max6507@y.com |
 
   Scenario: Get Verification Url
    Given User verification url
@@ -24,8 +24,8 @@ Scenario Outline: Verification Check of User
   When Verification check "verification_check" with end url
   Then Verification of Status
   Examples:
-    | Emaill |
-    |max6505@y.com|
+    | Emaill        |
+    | max6507@y.com |
 
   Scenario Outline: Set Password of User
     Given Verification of user password with "<Password>"
@@ -34,3 +34,11 @@ Scenario Outline: Verification Check of User
     Examples:
       | Password |
       | Test@123 |
+
+    Scenario Outline: Veriy Referral
+      Given Verifying user "<Email>" with "<Referral>"
+      When Setting referral with post request "verify_referral"
+      Then Checking referral get successfully
+      Examples:
+        | Email         | Referral |
+        | max6507@y.com | amrendra |

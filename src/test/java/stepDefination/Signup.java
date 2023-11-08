@@ -112,15 +112,28 @@ Response response;
         System.out.println(token);
 
     }
-    //    RequestSpecification req = new RequestSpecBuilder().addHeader("device-type", "WEB").addHeader("token", token)
-//            .build(); //Common parameter in single specbuilder class
-//
-//
-//    //set password
-//  String pass=  given().spec(req).body(userpayload.passwordpayload(Treedata[1]))
-//            .when().patch("/writer/v3/user/password/set").
-//    then().log().all().assertThat().statusCode(200);
-//
+
+    //Set Password
+    @Given("Verification of user password with {string}")
+    public void verificationOfUserPasswordWith( String password) throws IOException {
+       requestSpecification= given().spec(requestSpecification()).header("token",token)
+               .body(userpayload.passwordpayload(password));
+    }
+
+    @When("Setting password with patch request {string}")
+    public void settingPasswordWithPatchRequest(String endurl) {
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response=requestSpecification.when().patch(apiResources.getResource());
+    }
+
+    @Then("Checking password set successfully")
+    public void checkingPasswordSetSuccessfully() {
+        assertEquals(response.getStatusCode(),200);
+    }
+
+    //Verify Referral
+
+
 //
 //    //Verify Referral
 //  String reff=  given().spec(req).body(userpayload.referralpayload(Treedata[0],""))
