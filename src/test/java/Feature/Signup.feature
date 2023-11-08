@@ -21,8 +21,16 @@ Feature: Validating login
 
 Scenario Outline: Verification Check of User
   Given Verification check of "<Emaill>"
-  When Verification check "<endurl>" with end url
+  When Verification check "verification_check" with end url
   Then Verification of Status
   Examples:
-    | Emaill |endurl|
-    |max6503@y.com| verification_check|
+    | Emaill |
+    |max6503@y.com|
+
+  Scenario Outline: Set Password of User
+    Given Verification of user password with "<Password>"
+    When Setting password with patch request "set_password"
+    Then Checking password set successfully
+    Examples:
+      | Password |
+      | Test@123 |
