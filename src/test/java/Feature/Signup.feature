@@ -7,7 +7,7 @@ Feature: Validating login
     Then the API call got success with status code 200
    Examples:
      | Email |
-     |max6504@y.com|
+     |max6505@y.com|
 
    Scenario: Get Verification Url
    Given User verification url
@@ -25,7 +25,7 @@ Scenario Outline: Verification Check of User
   Then Verification of Status
   Examples:
     | Emaill |
-    |max6504@y.com|
+    |max6505@y.com|
 
   Scenario Outline: Set Password of User
     Given Verification of user password with "<Password>"
