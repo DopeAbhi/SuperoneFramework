@@ -8,6 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -111,6 +112,24 @@ public class stepDefination extends Utils {
 
 
 
+//    @Given("Verification check of {string}")
+//    public void verificationCheckOfUser(String Email) throws IOException {
+//        requestSpecification = given().spec(requestSpecification()).queryParam("email", Email);
+//    }
+//
+//    @When("Verification check {String} with end url")
+//    public void verificationCheckWithEndUrl(String endurl) throws IOException {
+//        APIResources apiResources= APIResources.valueOf(endurl);
+//        response=requestSpecification.when().get(apiResources.getResource());
+//    }
+//
+//    @Then("Verification of Status")
+//    public void verificationOfStatus() {
+//        String verificationresponse=response.then().log().all().assertThat().statusCode(200).extract().response().asString();
+//        JsonPath js2 = Utils.rawtojson(verificationresponse);
+//        String token = js2.getString("data.token");
+//        System.out.println(token);
+//    }
 
 
 

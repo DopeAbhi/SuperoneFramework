@@ -12,6 +12,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import jdk.jshell.execution.Util;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.junit.runner.RunWith;
 
 import java.io.IOException;
@@ -24,7 +25,8 @@ public class Signup extends Utils {
 
 RequestSpecification requestSpecification;
 RequestSpecification requestSpec;
-    String vertoken;
+    static String vertoken;
+    String token;
 
 Response response;
 
@@ -47,6 +49,7 @@ Response response;
     }
 
 
+    //Verification URL
     @Given("User verification url")
     public void userVerificationUrl() throws IOException {
         requestSpecification=given().spec(requestSpecification()).queryParam("password", "711b525c69e8b0edc6221518b8ff878f");
@@ -70,15 +73,18 @@ Response response;
         System.out.println(vertoken);
     }
 
+
+    //Verify User
     @Given("Verifying user with token")
     public void verifyingUserWithToken() throws IOException {
-        requestSpecification=given().spec(requestSpecification()).body(userpayload.verifyuserpayload(vertoken));
+        System.out.println(vertoken);
+        requestSpecification=given().log().all().spec(requestSpecification()).body(userpayload.verifyuserpayload(vertoken));
     }
 
     @When("Call {string} with Post http request")
     public void callWithPostHttpRequest(String endurl) {
         APIResources apiResources=APIResources.valueOf(endurl);
-        response= requestSpecification.when().get(apiResources.getResource());
+        response= requestSpecification.when().post(apiResources.getResource());
     }
     @Then("Verification of status code {int}")
     public void verificationOfStatusCode(int arg0) {
@@ -86,22 +92,27 @@ Response response;
 
     }
 
-//Verify User
-//           String verify= given().spec(requestSpecification())
-//    .body(userpayload.verifyuserpayload(vertoken))
-//            .when().post("/writer/v3/user/verifyUserToken")
-//    .then().log().all().assertThat().statusCode(200);
-
     //Verification Check
+    @Given("Verification check of {string}")
+    public void verification_check_of(String Email) throws IOException {
+        requestSpecification = given().spec(requestSpecification()).queryParam("email", Email);
 
-//    String verificationresponse = given().header("Bypass-W3villa-Areyxukcyb", true).header("device-type", "WEB").queryParam("email", Treedata[0])
-//            .when().get("/reader/user/checkVerificationStatus")
-//            .then().log().all().assertThat().statusCode(200).extract().response().asString();
-//    JsonPath js2 = Utils.rawtojson(verificationresponse);
-//    String token = js2.getString("data.token");
-//
-//
-//    RequestSpecification req = new RequestSpecBuilder().addHeader("device-type", "WEB").addHeader("token", token)
+    }
+    @When("Verification check {string} with end url")
+    public void verification_check_with_end_url(String endurl) {
+        APIResources apiResources= APIResources.valueOf(endurl);
+    response=requestSpecification.when().get(apiResources.getResource());
+
+    }
+    @Then("Verification of Status")
+    public void verification_of_status() {
+        String verificationresponse=response.then().log().all().assertThat().statusCode(200).extract().response().asString();
+        JsonPath js2 = Utils.rawtojson(verificationresponse);
+        String token = js2.getString("data.token");
+        System.out.println(token);
+
+    }
+    //    RequestSpecification req = new RequestSpecBuilder().addHeader("device-type", "WEB").addHeader("token", token)
 //            .build(); //Common parameter in single specbuilder class
 //
 //

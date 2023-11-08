@@ -32,7 +32,7 @@ public class Utils {
             PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
             req = new RequestSpecBuilder().setBaseUri(getGlobalValue("RestAssured.baseURI"))
                     .addHeader("Content-Type", "application/json")
-                    .addHeader("Device-Type", "WEB")
+                    .addHeader("device-Type", "WEB")
                     .addFilter(RequestLoggingFilter.logRequestTo(log))
                     .addFilter(ResponseLoggingFilter.logResponseTo(log))
                     .setContentType(ContentType.JSON).build();   //request spec builder
