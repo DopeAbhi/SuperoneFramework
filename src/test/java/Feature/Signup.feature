@@ -40,5 +40,26 @@ Scenario Outline: Verification Check of User
       When Setting referral with post request "verify_referral"
       Then Checking referral get successfully
       Examples:
-        | Email         | Referral |
-        | max6507@y.com | amrendra |
+        | Email          | Referral |
+        | max6507@y.comƒ | amrendra |
+
+      Scenario Outline: Set Username
+       Given Setting username with "<username>"
+        When Setting username with patch request "set_username"
+        Then Checking username set successfully
+        Examples:
+          | username |
+          | max6507  |
+
+  Scenario Outline: Set First and Last Name
+          Given Setting first and last name with "<first_name>"
+          When Setting first and last name with patch request "set_first_and_last_name"
+          Then Checking first and last name set successfully
+          Examples:
+            | first_name | last_name |
+            | max6507    | Test      |
+
+    Scenario: Setting Avatar
+      Given Setting avatar of the user
+      When Setting avatar with patch request "set_avatar"
+      Then Checking avatar set successfully

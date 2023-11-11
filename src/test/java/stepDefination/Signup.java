@@ -14,6 +14,7 @@ import io.restassured.specification.RequestSpecification;
 import jdk.jshell.execution.Util;
 import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.junit.runner.RunWith;
+import reuseableMethods.Reuseablemethods;
 
 import java.io.IOException;
 
@@ -27,6 +28,8 @@ RequestSpecification requestSpecification;
 RequestSpecification requestSpec;
     static String vertoken;
     String token;
+    String imageurl;
+            int userid;
 
 Response response;
 
@@ -132,13 +135,89 @@ Response response;
     }
 
     //Verify Referral
+    @Given("Verifying user {string} with {string}")
+    public void verifyingUserWith(String email, String referral) throws IOException {
+       requestSpecification= given().spec(requestSpecification()).header("token",token).body(userpayload.referralpayload(email, referral));
+    }
+
+    @When("Setting referral with post request {string}")
+    public void settingReferralWithPostRequest(String endurl) {
+        APIResources apiResource=APIResources.valueOf(endurl);
+        response=requestSpecification.when().post(apiResource.getResource());
 
 
-//
-//    //Verify Referral
-//  String reff=  given().spec(req).body(userpayload.referralpayload(Treedata[0],""))
-//            .when().post("/writer/v3/user/verifyReferral")
-//                                    .then().log().all().assertThat().statusCode(200);
+    }
+    @Then("Checking referral get successfully")
+    public void checkingReferralGetSuccessfully() {
+        assertEquals(response.getStatusCode(), 200);
+    }
+
+    //Username
+    @Given("Setting username with {string}")
+    public void settingUsernameWith(String username) throws IOException {
+        requestSpecification=given().spec(requestSpecification()).body(userpayload.usernamepayload(username));
+    }
+
+    @When("Setting username with patch request {string}")
+    public void settingUsernameWithPatchRequest(String endurl) {
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response=requestSpecification.when().patch(apiResources.getResource());
+    }
+
+    @Then("Checking username set successfully")
+    public void checkingUsernameSetSuccessfully() {
+        assertEquals(response.getStatusCode(),200);
+    }
+
+
+    // First and Last Name
+    @Given("Setting first and last name with {string}")
+    public void settingFirstAndLastNameWithAnd(String firstname ) throws IOException {
+        requestSpecification=given().spec(requestSpecification()).body(userpayload.namepayload(firstname));
+    }
+
+    @When("Setting first and last name with patch request {string}")
+    public void settingFirstAndLastNameWithPatchRequest(String endurl) {
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response=requestSpecification.when().patch(apiResources.getResource());
+    }
+
+    @Then("Checking first and last name set successfully")
+    public void checkingFirstAndLastNameSetSuccessfully() {
+    assertEquals(response.getStatusCode(),200);
+   String rawresponse = response.then().extract().response().asString();
+        JsonPath js3 = Utils.rawtojson(rawresponse);
+      imageurl=   js3.getString("data.imageUrl");
+      userid=   js3.getInt("data.id");
+    }
+
+
+    //Avatar
+
+    @Given("Setting avatar of the user")
+    public void settingAvatarOfTheUser() throws IOException {
+        requestSpecification=given()
+                .spec(requestSpecification()).body(userpayload.avatarpayload(imageurl,userid));
+    }
+
+    @When("Setting avatar with patch request {string}")
+    public void settingAvatarWithPatchRequest(String endurl) {
+    APIResources apiResources=APIResources.valueOf(endurl);
+    response=requestSpecification.when().patch(apiResources.getResource());
+
+    }
+
+    @Then("Checking avatar set successfully")
+    public void checkingAvatarSetSuccessfully() {
+        assertEquals(response.getStatusCode(),200);
+     String avatarresp=   response.then().extract().response().asString();
+        JsonPath avatarjson = Utils.rawtojson(avatarresp);
+    String rawreferral = avatarjson.getString("data.referralLink");
+        System.out.println(rawreferral);
+
+    }
+
+
 //
 //    //Set Username
 //   String use= given().spec(req).body(userpayload.usernamepayload(Treedata[2]))
