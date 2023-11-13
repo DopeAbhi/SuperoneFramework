@@ -16,8 +16,694 @@ Body:
     "countryName": "India",
     "deviceToken": "",
     "deviceType": "WEB",
-    "email": "max6506@y.com",
+    "email": "max6517@y.com",
     "lang": "en",
     "referenceId": "",
     "subscribeMarketing": true
+}
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:34 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"92-MSWINLOavQdxcpl3g8engcTB+eM"
+Set-Cookie: sails.sid=s%3AKop8pS3IYWBaNQRRGn8JevtmYXBjSQjw.nEtChFCR967Qtrpm1yEAYxlq5aJNMbzXo05HwHCOqTA; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GNJZL43L1UbUkWesU5NJ6XseBrMKEWi7gOmJJwsuSDmrtumrauNnMiI7NnxbegERsw7GA6sKzEGZt7xs5X1dlwAUHwx3oVHAGcY6en%2BPuMXxZ2UOBuKud%2F%2B%2BVU1mhQo%2B%2BH8JNHJw"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e00cab632b0f-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Verification link sent successfully on your email.",
+    "success": true,
+    "display": false,
+    "data": {
+        "islogin": false
+    }
+}
+Request method:	GET
+Request URI:	https://quickdev3.super.one/reader/getVerificationHistory?password=711b525c69e8b0edc6221518b8ff878f
+Proxy:			<none>
+Request params:	<none>
+Query params:	password=711b525c69e8b0edc6221518b8ff878f
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:35 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+X-Powered-By: Sails <sailsjs.com>
+ETag: W/"4080-ERVhl3geaQ+HlhvzR+B2bGabIjA"
+Set-Cookie: sails.sid=s%3AfFAwZzoW2JVkbpg1qwi3MR6KYhokr8t9.PE6javgFdlFVlQ0HdyhgmPK2n%2FSl4Pau%2BNvieyOcmqU; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jy9PXRXJahj3mIm7ZAyJJ0VGuiZFDwoGjyyh1mLEtY7qa9NCxphK1FJk4%2BiLqv1WElzcNZ5P%2Fe%2FVTlS4c0kCWlQGMeuQ81PsjqDwjeyChBn7BTrOlSaNcUxof3aS0a7sB0Hiaf6o"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e012fdec2af9-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Data found.",
+    "success": true,
+    "display": false,
+    "data": [
+        {
+            "id": 3746,
+            "otpReceiver": "max6517@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=5333b481a41dd4c293793b5d177fe412e397f84c8cc23513e1e1611206862a89e5d873d5d48622b4610036d253ab536c26d78c0cbab796d8ae801ecddeb8e924",
+            "verifiedAt": null
+        },
+        {
+            "id": 3745,
+            "otpReceiver": "max6516@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=87ea807b1c3ea4c98efd7d63063021e5d61d0aa4a8b256643894752111bffdb956937221b2469ee68441be888b4978e2f966d1dfcb8581a9b2e89e98526713ff",
+            "verifiedAt": 1699855859805
+        },
+        {
+            "id": 3744,
+            "otpReceiver": "max6515@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ba1d18d101f98ac0717eab692a550e0efb2b57bb33d2200009ad5571d9222aa97557231f31e572d672b509471057432a29d00c177c5de03ef038826781921378",
+            "verifiedAt": 1699855726032
+        },
+        {
+            "id": 3743,
+            "otpReceiver": "max6514@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=643a54d1bf60068f8362ac66f419885fdf51d0fd8353169c61b2a4c2ceb6787a392c290b847a54ed465ec4274d332dbec6799615ced903f58f43f1d95f0f69f0",
+            "verifiedAt": 1699854527144
+        },
+        {
+            "id": 3742,
+            "otpReceiver": "max6512@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=e264b5758b1526a0125541d7850dcdcbd1bc9ac144f5d298ca9a82a5d311efa5dad50f77754ad330505cc79f35c24287079952244be5ab96fc02a7d3e81895e9",
+            "verifiedAt": 1699854167972
+        },
+        {
+            "id": 3741,
+            "otpReceiver": "max6511@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=92995008d6b866ac878a5c2370a19f40ba5f065c8c624f8921699f0df8c351262f1db343b073bdc604cbefaeeb40e045c481908ee3f5dab46ba74b1f7048490f",
+            "verifiedAt": 1699853576412
+        },
+        {
+            "id": 3740,
+            "otpReceiver": "max6510@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=16ada1419e13881e6bf3105f294c2d90b81efdf72cd32222a282a780bf5aee290256e85ee8243225dcb0919d0987872f9855852531c24712ebb6cbaa7b3534eb",
+            "verifiedAt": 1699852542522
+        },
+        {
+            "id": 3739,
+            "otpReceiver": "mbb15@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=2668809e43cefc751e1bced39f14b945497fc575f28d5a3e1a45a57795438a41c2e7a2f3e477a94809de810e475b6d32549851e06a86b9e2e708683abca7420b",
+            "verifiedAt": 1699851949684
+        },
+        {
+            "id": 3738,
+            "otpReceiver": "mbb14@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=e1e33f7314e9177c53e54e20423e4fc7ca314fc86d61accd15ad27ca3df4879216d1b4f367e1434383e90efad3b18c28031e27bd13f8e7efa2d67e7f079513d1",
+            "verifiedAt": 1699851944372
+        },
+        {
+            "id": 3737,
+            "otpReceiver": "mbb13@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=3fbb9215333dc9fa27aa30de3372d20a7faa1b7b2dc598e5d94355cb445c510a0f7a7ffadde85b9a24e3f040755d6d80d4fef20f03920778a834a26848984302",
+            "verifiedAt": 1699851939154
+        },
+        {
+            "id": 3736,
+            "otpReceiver": "mbb12@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=97e00fdfb6df0dcc04e2c7e1926ae6db3c30b95ec3e53bf6200b4251f91d30f3e882176c4440b2fdddd80290bf4f4a20b577c46a213a00eadfa998f3eb1b584d",
+            "verifiedAt": 1699851933392
+        },
+        {
+            "id": 3735,
+            "otpReceiver": "mbb11@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=bbc3ad2cf2fa66f2d74a176f73881e187dec1ce12ebbceb2d351f87eb045831c1bf73fe994d8e3403d5195195261209033e350efe9f0703f7994c0fa569408b2",
+            "verifiedAt": 1699851928233
+        },
+        {
+            "id": 3734,
+            "otpReceiver": "mbb10@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=411157b46876dc772466c2e0c0346c4c7da212d6e942d64d5c032be20b3c0e2753b1710c0741c9ab1c59625527605e5b60d83802e5b8e10920c951a4468e5003",
+            "verifiedAt": 1699851923227
+        },
+        {
+            "id": 3733,
+            "otpReceiver": "mbb9@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=013cc80fa440817ef9142283c1795766df87e88e03f44c57f9045b4e5d18b983a9ffc4bf260b700488cdbcfd148f6280ab01e5f31b5ce92ab01c7f91f1764669",
+            "verifiedAt": 1699851918138
+        },
+        {
+            "id": 3732,
+            "otpReceiver": "mbb8@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=b65a6dfa4a79c17cdd9c2dfef1eb601bf2dbbb27b816219bbed9719dd56ca55f1870e3b9877cfc9ed820465483ea703482d92e0fe24024a27140889f78518035",
+            "verifiedAt": 1699851912733
+        },
+        {
+            "id": 3731,
+            "otpReceiver": "mbb7@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=a14d6ef1f35180890660a7baeb68bc84e856155006b1cf1e22830fb3852d5d0ef142cd17795f4f5a25cc731eeaa73a96116ef2fca69b9728c0489d0d20b6ebf9",
+            "verifiedAt": 1699851906886
+        },
+        {
+            "id": 3730,
+            "otpReceiver": "mbb6@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=e32c60d7c6579e240053d1d329b63a5f8e53d8632cd6e697eb3c8d49cc0a71caf727ddc33c1e5052cee17b8fc8543b363a99414c06c6b7c1958b8edbb7faed58",
+            "verifiedAt": 1699851900106
+        },
+        {
+            "id": 3729,
+            "otpReceiver": "mbb5@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=2a02a6053dc04f724460454d228f450c4492e1a3229bba61fcb40ee00699a686a972122e7929a2d1dc282350b105475534a2dcf27340917b24595ada05e67bdc",
+            "verifiedAt": 1699851894689
+        },
+        {
+            "id": 3728,
+            "otpReceiver": "mbb4@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=23e3c732edaff7d41d022494dd3ddacff9237a7674e780d215561a6b1ef4b71b247f9115140964f56174f5443fe6df8d2ceb95abc6b6607dd562d7bc77795bda",
+            "verifiedAt": 1699851888976
+        },
+        {
+            "id": 3727,
+            "otpReceiver": "mbb3@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=3a6426d49c3fee69cf8a1899948fa9e58171a7ebb02830ba6842f7b64612893c6d1e3ab38004f9b6d99b050e8c21c65c101a9b7e6372104b6644436f2579fd83",
+            "verifiedAt": 1699851883272
+        },
+        {
+            "id": 3726,
+            "otpReceiver": "mbb2@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=0f79d685f232f0e133eb682cbc5f90c771af32006ef6d61416f045b29a2a227d1e4b90c58089d8201e3c5fa9d7e20717965b6ad9d3bb933c5aecc025e2b7194c",
+            "verifiedAt": 1699851877158
+        },
+        {
+            "id": 3725,
+            "otpReceiver": "mbb1@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=6c7f848f822d4b3114a699d2c2a65976be0c10e89b008703dd3168a437063183639635b3f7b8fc9e29abe9e260257f4add54009129a978a7dcb7228ba4a0b3e4",
+            "verifiedAt": 1699851870434
+        },
+        {
+            "id": 3724,
+            "otpReceiver": "sup9@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=cd04c76b9a6898b40f95255a1a62bd6ecd9ded9f14e42389bb3d49dcea97a0c4b951a4ef3e0780997520bfde7840b691f197de856e9ca5d68a49337b8096c6d8",
+            "verifiedAt": 1699599909498
+        },
+        {
+            "id": 3723,
+            "otpReceiver": "sup8@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=26a68691efa98e53a089e01b167842e788f0a73379aacf4ac8af50c2fe659bbfe426b3fb9f3c2b560079b02f03509c290b4d138aded018926e1873b4d7786c10",
+            "verifiedAt": 1699599793685
+        },
+        {
+            "id": 3722,
+            "otpReceiver": "sup7@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=0c8e1a7c15cacec7df608528214ecc8779360a33f201a9f156d4a66e50aee01f533b5e7b84fc0095efdf4df295f4c7f4cb1b8db30a57e68b182a75e34cf1c2ff",
+            "verifiedAt": 1699599668376
+        },
+        {
+            "id": 3721,
+            "otpReceiver": "sup6@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=75163ef6daf9a3021e9b5a816122bc69f7b103649cd257278b165d965b95a27502cf9d605cd9ab1a46a712963992b92999a5e1ed9e6e4158533489931100fad4",
+            "verifiedAt": 1699599503167
+        },
+        {
+            "id": 3720,
+            "otpReceiver": "sup5@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=699dc2e496cc401e94177934fb7ba31c09ad24aab53c75947ca4822396b2af559c1f6787cae6f13e0dd8235ee403505bb958c8e85d1984f282d2939887d96320",
+            "verifiedAt": 1699599327294
+        },
+        {
+            "id": 3719,
+            "otpReceiver": "sup4@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=e5ae4d1b492ebba9984dfe3807c659b2bdf7d1d2d30cb518e4648f8ccbe846e59f1f6c79c8c9fa461d419225e8dfdc4532c8eaaa4bc17570b33ee0d9bfb73f2f",
+            "verifiedAt": 1699599249077
+        },
+        {
+            "id": 3718,
+            "otpReceiver": "sup3@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=c68e43547b406cb2ef1a1252ccf037c617f8db226207af3249e915e686ecbb86948e5dceb0f094ca11575c929d1e2b2752cb06ddf78f6646a064af092af3110f",
+            "verifiedAt": 1699599158955
+        },
+        {
+            "id": 3717,
+            "otpReceiver": "sup2@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ca1bb28cea1c1e64da6ab4fd8f703719fd525f5efc0f775ec7772f05d3529dded92139e06595febd4aed2b4e63fa88133b77a1b378009ff490b37aa07674cc41",
+            "verifiedAt": 1699598988111
+        },
+        {
+            "id": 3716,
+            "otpReceiver": "sup1@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=2af76dc94173f6791c4c9f194532a400d5bdbbaa1d6efe1f4d3ebff790fc5268098ae50df873599f68fe40b76b74c30f71785d50f858a9a54c5778b96b5e3c2a",
+            "verifiedAt": 1699598805656
+        },
+        {
+            "id": 3715,
+            "otpReceiver": "sup@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=f6ec8a8b1d4391e5e4501142c5620ae403ae39ed449fab8cd12204bb33872ea925d4fcbad90314347c268f08c993fa46bbaaf116326f4d905dc50c29c1ca064e",
+            "verifiedAt": 1699595184249
+        },
+        {
+            "id": 3714,
+            "otpReceiver": "cdcdtryingtest@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ed97f50c54e139e208179704de71db42d4d774b5c7edd47b43ae6c346b3594845c3e32f6db8d5b8fb717cd600f3c07ea93426ea1a3014c3d1d330a9dbfc9d2ea",
+            "verifiedAt": 1699519814889
+        },
+        {
+            "id": 3713,
+            "otpReceiver": "testimngreply@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ce35a32b6f0fb7ae3105c201d907e349336bb5d6ee928fdf09c870958db00579741219d6df123f01703da826a87c2c987a067a99dd1d2310363dac1ce4e49c6c",
+            "verifiedAt": 1699515294633
+        },
+        {
+            "id": 3712,
+            "otpReceiver": "testingdirectchil@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=7b3e9b5f6824eea51073ba6a85f6d4561463d5ced4482160bb365c6cf18851c123acd76036075eb9dd930b251ebc41027e442edd42a5802468a1b83f2735fda3",
+            "verifiedAt": 1699514259758
+        },
+        {
+            "id": 3711,
+            "otpReceiver": "max6503@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=85226b419535ead5a17e5db0a15dfb613fd0a883954e9dae21dd7866e2c53d907fff38d6ca373fcd2fc279cd7f8b433b01498bbab89e666bda3e4ddf08e6d77e",
+            "verifiedAt": 1699430174810
+        },
+        {
+            "id": 3710,
+            "otpReceiver": "brat247@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=ab2cf574e1e45dbfd50c6a87e3d51e36e9f10ea88da000c2f28ba031cb62d46f3781b3bb8082735b3969b783808a17d6c71b62143a35608da04551c8b171f2fa",
+            "verifiedAt": 1699429350737
+        },
+        {
+            "id": 3709,
+            "otpReceiver": "max6502@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=9a6019d404c4b76bc35108c65a6b8258882ddcfe7b8e5c901f4fb6041b1855ca40275bdaef9c7b327b9f77236fbd1dedd23e9db9790d01321d1f9aea27d157f0",
+            "verifiedAt": null
+        },
+        {
+            "id": 3708,
+            "otpReceiver": "max6501@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=a6e4f45ecb77264844e8c83f0d9d4a0d36ee5512d6d1c5728f3c6e14adb236d2dd6c166f2f9b1b19ec27f24d4a793f8581ad2ed3b2f905000d4facefc3102ac1",
+            "verifiedAt": null
+        },
+        {
+            "id": 3707,
+            "otpReceiver": "max6500@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=f53930cfa53c36b4199fe9fccdbabff62861b5047d50d2a5afcd19f191d7ea98dd328555da12e39ec739cc3feaa996c1ac467fbab0893af812bae35b38918467",
+            "verifiedAt": null
+        },
+        {
+            "id": 3706,
+            "otpReceiver": "brat246@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=6e1927b8e636e26566149ef2f0ecdec5f4ccfb1f89b16d6c25d7c2823f65839330e8c56c0242ed8fc1adc4dc3f9dad4eb65707b1a0842cee667175131f627ca3",
+            "verifiedAt": 1699425879059
+        },
+        {
+            "id": 3705,
+            "otpReceiver": "brat245@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=9a7eeed28e108fcd30dd31dc4e445ab18f8a38d2fcba4bdd7fe6bb530df60506c11cc829a79da04ceb43aaa4812d3058cc0ac44df282d245e648f9ed5e06b7fb",
+            "verifiedAt": 1699425381668
+        },
+        {
+            "id": 3704,
+            "otpReceiver": "brat244@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=1e476cdbef019dc6812052275494a86241734aefcae504c63c25713a3f3b0bc6f403af2efc7ec25c8f85e8b1d62acc05a46811874375c386d1e838228706dd24",
+            "verifiedAt": 1699423560496
+        },
+        {
+            "id": 3703,
+            "otpReceiver": "max6400@y.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=a030f490dc63b1935451943c20a6237cf665728344b0a22d7e0079175f041bd4f9b61978a104f9a2f3806fa669fa8618da73f1e8f397940aba63a32e6fd39640",
+            "verifiedAt": null
+        },
+        {
+            "id": 3702,
+            "otpReceiver": "ubb19@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=1379344de7f3105afb4504cc4321eba5a7ac51d3d1e6a382abd123f344aefa7a0822d489c048b4c101264099fd672f5b33f89e3063ee9e9dc25dd73a8a61c1e6",
+            "verifiedAt": 1699354503326
+        },
+        {
+            "id": 3701,
+            "otpReceiver": "suerone@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=2f0ae04be3e5f188f4d45fa26093ea767b86c05a36504cc4fc213727ef683f0ce2b218f1eb278115a03cf47512d589ae4b2aa7961ebf8967177ef99000016c6a",
+            "verifiedAt": null
+        },
+        {
+            "id": 3700,
+            "otpReceiver": "superonenew@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=619e148388e13d7569b7de3b7c1d370a1b840b14f6b7eb4d0237c1e7549edafb61baf1f9e4203de4478c33b9f7a21f9916c79227576cf5913f274b5af6c654de",
+            "verifiedAt": 1699268728504
+        },
+        {
+            "id": 3699,
+            "otpReceiver": "test123456@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=adbeafa631eaf8ee8994c1a12dca3e45e9c9caea7ad42ae56e9a15b8f1557c6132523009de7a77f9609e10a7ce152464cb877ed95e119430be2f2a0a4def24b9",
+            "verifiedAt": null
+        },
+        {
+            "id": 3698,
+            "otpReceiver": "test11111@t.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=16b3a191a4c7e07f8c6117f4af858afd715fa8761776824de7a67cc2544fbc50fb8a1abc22bf90742c95471437b6d16dbe9731c8897feed8f59319540a131036",
+            "verifiedAt": 1699256127188
+        },
+        {
+            "id": 3697,
+            "otpReceiver": "ubb18@gmail.com",
+            "verificationHash": "https://quickdev3.super.one/webapp/email-verify?verification-token=54e310f97c3257691ee776c5c2627f481a7d4e8d7c8abcc664108ca41905ffe980ea27b8cff630928b5bc0515f3d0457fc5da68c6ca83054f59397644ae8654a",
+            "verifiedAt": 1699011166783
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://quickdev3.super.one/writer/v3/user/verifyUserToken
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "deviceType": "WEB",
+    "verification_token": "5333b481a41dd4c293793b5d177fe412e397f84c8cc23513e1e1611206862a89e5d873d5d48622b4610036d253ab536c26d78c0cbab796d8ae801ecddeb8e924"
+}
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:37 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"65-FMkEwAj9k+cxGgnTCLy3QaFD0/c"
+Set-Cookie: sails.sid=s%3ANxZ0jzCCcT901E5aEha8YsO_ySxSFO0A.6pixXuAB18zcpXN%2FIrnx2ruSrSCLUSKJMT0Y7LdDcC4; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qc9EpY48xCoB9%2FTwfknCNGP0Yw1UC6VqWLKI%2ByKxZsZentqdr3mPW60j%2Bk3JcV7wsTVKU0UTQfQ4tNSzqQOTIZFQtDFgeW%2BAxGx0DKOsfotw32cBtZyKyJmxZ86iqm42p3IBJDjc"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e01b6c622b0d-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Your email has been verified!",
+    "success": true,
+    "display": false,
+    "data": {
+        
+    }
+}
+Request method:	GET
+Request URI:	https://quickdev3.super.one/reader/user/checkVerificationStatus?email=max6517%40y.com
+Proxy:			<none>
+Request params:	<none>
+Query params:	email=max6517@y.com
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+X-Powered-By: Sails <sailsjs.com>
+ETag: W/"127-bgEtjBXp2mS6tUL08K8I8gpI+fQ"
+Set-Cookie: sails.sid=s%3AHPsJKJfln4jVtIKu80i_kJATvM37PQND.3XVKGUMHgQFAidmp8GT%2FaLgFHcGVbH6fiz8tA4LeaiI; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hQtzzI62Mn6LGzg0n8%2FHNf%2FAwcVLl7ePpwiQN%2FKPXVRgnqIzAShBjFjDA6zNgV8ULeLbMk%2B6q37vsmp9YnKezMKpG9Us5pJBSXf6A1BHSjbTSpgDo1qlANGgqUaq4EPHXcIyzNME"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e0268d772b0d-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Email verified.",
+    "success": true,
+    "display": false,
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0MSwiaWF0IjoxNjk5ODU2MDc4LCJleHAiOjE3MDI0NDgwNzh9.8iSpv8lStBfE6Wobn9F0fRE4XldUCrbpFZgf6PsUmEs",
+        "id": 104941,
+        "member": 120492
+    }
+}
+Request method:	PATCH
+Request URI:	https://quickdev3.super.one/writer/v3/user/password/set
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0MSwiaWF0IjoxNjk5ODU2MDc4LCJleHAiOjE3MDI0NDgwNzh9.8iSpv8lStBfE6Wobn9F0fRE4XldUCrbpFZgf6PsUmEs
+				device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Test@123"
+}
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"79-UEeG408raWoPaRpsypNUYo9YGP4"
+Set-Cookie: sails.sid=s%3AoTPWIwklnBxkpYvP8cI0gGRBYVplgd1S.EiZUtsys%2FNMtgPFPWq0hsRykOqTCNjcwUKZtAzDJ7FU; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FSFOAW%2FtPfQ7UZbGBi3WfhLEy2vTiHb5qHENrAVB0BwU4qJb%2FuegF1I4mR%2B8L8WHE928w9yy32ePFqN2oe4QBZ837a7RfiGTgzSsHcCkLTBusRsUR47969IDhvMJr%2BSh1JIQjc%2Fc"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e02b19272b0d-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Password set.",
+    "success": true,
+    "display": false,
+    "data": {
+        "nextAction": "SET_REFERRAL"
+    }
+}
+Request method:	POST
+Request URI:	https://quickdev3.super.one/writer/v3/user/verifyReferral
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0MSwiaWF0IjoxNjk5ODU2MDc4LCJleHAiOjE3MDI0NDgwNzh9.8iSpv8lStBfE6Wobn9F0fRE4XldUCrbpFZgf6PsUmEs
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "max6517@y.com",
+    "referralCode": "amrendra"
+}
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"a0-TgvRfpw7tkSxkv1ALvZ93M2Bh5Q"
+Set-Cookie: sails.sid=s%3ACGh9i7JQxJLInfPpKNWJh_pAaamYfxRc.T4oW4Caw2mHt9jaOJJ4DLpxSCrgGKdFULWSknHSjTWA; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NGyrGbc0B%2FGk6EXlB8zqu7q3%2BdDaqP%2FjwtEu9FiY9JgmWGMrtHix5wvdkDOFtgmeKClF7c9nm7bHf8tCxAV6cXpJIz38HaQ6nZUME4ns%2BHXaZRKQVYbg9XujHSrBCDH0bvlQXsXl"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e02f6f042b0e-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "User placed.",
+    "success": true,
+    "display": false,
+    "data": {
+        "id": 104941,
+        "member": 120492,
+        "nextAction": "SET_USERNAME"
+    }
+}
+Request method:	PATCH
+Request URI:	https://quickdev3.super.one/writer/v3/user/updateUserName
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0MSwiaWF0IjoxNjk5ODU2MDc4LCJleHAiOjE3MDI0NDgwNzh9.8iSpv8lStBfE6Wobn9F0fRE4XldUCrbpFZgf6PsUmEs
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "languageCode": "en",
+    "userName": "max6517"
+}
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:40 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"118-ynB8SZTOc10XKyjbhLFVT0AMT+M"
+Set-Cookie: sails.sid=s%3ACb4K4riZCv8ZbyTLEHh3krqm_nuxPXkE.TV75nrNaI3Fi1rOg%2FcTUwERvGBuWyLw75zH2yke%2FSEU; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2A0Pjq5WDlsi6zpQ4%2BkYhrIxOAo61uQVlu5aKGdG9ySDGztfwG%2FW7VXFi6Yj1zRSTxZlx8h5qBP0f7SUyFXWsm3A3mciSsFq1zi5ycx6dWfgjbfTwJftYorytboLl2KT%2F8%2F3J3Iw"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e0357be42af9-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "The Account user name has been updated successfully.",
+    "success": true,
+    "display": false,
+    "data": {
+        "imageUrl": "https://d2sve40ue2b0nm.cloudfront.net/avatar/f0ef2b72-e494-4b4b-8f93-c13cf9ebff15.webp",
+        "nextAction": "SET_NAME",
+        "id": 104941
+    }
+}
+Request method:	PUT
+Request URI:	https://quickdev3.super.one/writer/v3/user/100706/updateUserInfo
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0MSwiaWF0IjoxNjk5ODU2MDc4LCJleHAiOjE3MDI0NDgwNzh9.8iSpv8lStBfE6Wobn9F0fRE4XldUCrbpFZgf6PsUmEs
+				device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "max6517",
+    "lastName": "test"
+}
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:41 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"151-Q3nJ/5irYmPCv7wS4RIdpasA7G8"
+Set-Cookie: sails.sid=s%3AUF-yQQOmjNABidw3Uhg-JRRuB9bKRA06.CoiLLaDmHPKu%2FRuSD9xPv3SkJQcQEUd%2FgQCz3bkWvyY; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=iyzjOerU3CMGZhVSMxddgCL83mW6PIFMp8jHGPjfIVlA5Chaljl71Qc23PYln7Igcoyzwqxq4g73y%2BellTwLc76kRG3JxEj5dgah91HIKoFK5MlbEoy1GnGPy8fHxfkToc%2BhyBfj"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e039cbd32b0d-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Update user details successfully.",
+    "success": true,
+    "display": false,
+    "data": {
+        "firstName": "max6517",
+        "lastName": "test",
+        "nextAction": "SET_AVATAR",
+        "id": 104941,
+        "member": 120492,
+        "imageUrl": "https://d2sve40ue2b0nm.cloudfront.net/avatar/9e266607-d70c-4596-ad71-6bcbd553221b.webp"
+    }
+}
+Request method:	PATCH
+Request URI:	https://quickdev3.super.one/writer/user/update-avatar
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0MSwiaWF0IjoxNjk5ODU2MDc4LCJleHAiOjE3MDI0NDgwNzh9.8iSpv8lStBfE6Wobn9F0fRE4XldUCrbpFZgf6PsUmEs
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "avatarUrl": "null",
+    "mode": "AVATAR",
+    "userId": 0
+}
+HTTP/1.1 200 OK
+Date: Mon, 13 Nov 2023 06:14:41 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"67-NQGfbjg/tkTqFC0CczasNPzlhtk"
+Set-Cookie: sails.sid=s%3AR6qQLkcr6t90208m7L8EWhby91dHQu7u.kVFhY1LrKrhhgiQCMJJ%2BW1LPYSfbNeplKwWF0WN67IA; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=25cWKA7QX5Bn7nm9nUqMHHFhU1XXVCC4UISNgMTP5btqMq32KYAZseY5pRAhWyA%2FrX5f2SX7N%2FZO%2FkBcuLVCq3MOZicL0%2BxtkZuAUvHOvzZA5HFJMOUnN17czdq8xTjDXh%2Bj4JF4"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8254e03e48d32b0e-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "code": 404,
+    "success": false,
+    "message": "The requested resource not found.",
+    "data": null
 }

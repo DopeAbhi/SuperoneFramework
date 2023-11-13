@@ -7,7 +7,7 @@ Feature: Validating login
     Then the API call got success with status code 200
    Examples:
      | Email         |
-     | max6507@y.com |
+     | max6517@y.com |
 
   Scenario: Get Verification Url
    Given User verification url
@@ -25,7 +25,7 @@ Scenario Outline: Verification Check of User
   Then Verification of Status
   Examples:
     | Emaill        |
-    | max6507@y.com |
+    | max6517@y.com |
 
   Scenario Outline: Set Password of User
     Given Verification of user password with "<Password>"
@@ -41,7 +41,7 @@ Scenario Outline: Verification Check of User
       Then Checking referral get successfully
       Examples:
         | Email          | Referral |
-        | max6507@y.comƒ | amrendra |
+        | max6517@y.com | amrendra |
 
       Scenario Outline: Set Username
        Given Setting username with "<username>"
@@ -49,15 +49,15 @@ Scenario Outline: Verification Check of User
         Then Checking username set successfully
         Examples:
           | username |
-          | max6507  |
+          | max6517  |
 
   Scenario Outline: Set First and Last Name
           Given Setting first and last name with "<first_name>"
-          When Setting first and last name with patch request "set_first_and_last_name"
+          When Setting first and last name with put request "set_firstname_lastname"
           Then Checking first and last name set successfully
           Examples:
-            | first_name | last_name |
-            | max6507    | Test      |
+            | first_name |
+            | max6517    |
 
     Scenario: Setting Avatar
       Given Setting avatar of the user

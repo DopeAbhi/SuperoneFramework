@@ -14,7 +14,7 @@ import io.restassured.specification.RequestSpecification;
 import jdk.jshell.execution.Util;
 import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.junit.runner.RunWith;
-import reuseableMethods.Reuseablemethods;
+
 
 import java.io.IOException;
 
@@ -27,7 +27,7 @@ public class Signup extends Utils {
 RequestSpecification requestSpecification;
 RequestSpecification requestSpec;
     static String vertoken;
-    String token;
+ static String token;
     String imageurl;
             int userid;
 
@@ -111,7 +111,7 @@ Response response;
     public void verification_of_status() {
         String verificationresponse=response.then().log().all().assertThat().statusCode(200).extract().response().asString();
         JsonPath js2 = Utils.rawtojson(verificationresponse);
-        String token = js2.getString("data.token");
+        token = js2.getString("data.token");
         System.out.println(token);
 
     }
@@ -119,7 +119,8 @@ Response response;
     //Set Password
     @Given("Verification of user password with {string}")
     public void verificationOfUserPasswordWith( String password) throws IOException {
-       requestSpecification= given().spec(requestSpecification()).header("token",token)
+        System.out.println(Signup.token);
+       requestSpecification= given().header("token",Signup.token).spec(requestSpecification())
                .body(userpayload.passwordpayload(password));
     }
 
@@ -137,7 +138,7 @@ Response response;
     //Verify Referral
     @Given("Verifying user {string} with {string}")
     public void verifyingUserWith(String email, String referral) throws IOException {
-       requestSpecification= given().spec(requestSpecification()).header("token",token).body(userpayload.referralpayload(email, referral));
+       requestSpecification= given().spec(requestSpecification()).header("token",Signup.token).body(userpayload.referralpayload(email, referral));
     }
 
     @When("Setting referral with post request {string}")
@@ -155,7 +156,7 @@ Response response;
     //Username
     @Given("Setting username with {string}")
     public void settingUsernameWith(String username) throws IOException {
-        requestSpecification=given().spec(requestSpecification()).body(userpayload.usernamepayload(username));
+        requestSpecification=given().spec(requestSpecification()).header("token",Signup.token).body(userpayload.usernamepayload(username));
     }
 
     @When("Setting username with patch request {string}")
@@ -173,13 +174,13 @@ Response response;
     // First and Last Name
     @Given("Setting first and last name with {string}")
     public void settingFirstAndLastNameWithAnd(String firstname ) throws IOException {
-        requestSpecification=given().spec(requestSpecification()).body(userpayload.namepayload(firstname));
+        requestSpecification=given().header("token",Signup.token).spec(requestSpecification()).body(userpayload.namepayload(firstname));
     }
 
-    @When("Setting first and last name with patch request {string}")
+    @When("Setting first and last name with put request {string}")
     public void settingFirstAndLastNameWithPatchRequest(String endurl) {
         APIResources apiResources=APIResources.valueOf(endurl);
-        response=requestSpecification.when().patch(apiResources.getResource());
+        response=requestSpecification.when().put(apiResources.getResource());
     }
 
     @Then("Checking first and last name set successfully")
@@ -197,7 +198,7 @@ Response response;
     @Given("Setting avatar of the user")
     public void settingAvatarOfTheUser() throws IOException {
         requestSpecification=given()
-                .spec(requestSpecification()).body(userpayload.avatarpayload(imageurl,userid));
+                .spec(requestSpecification()).header("token",Signup.token).body(userpayload.avatarpayload(imageurl,userid));
     }
 
     @When("Setting avatar with patch request {string}")
