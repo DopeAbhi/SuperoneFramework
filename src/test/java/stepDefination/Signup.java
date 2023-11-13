@@ -28,8 +28,8 @@ RequestSpecification requestSpecification;
 RequestSpecification requestSpec;
     static String vertoken;
  static String token;
-    String imageurl;
-            int userid;
+    static String imageurl;
+            static int userid;
 
 Response response;
 
@@ -197,24 +197,26 @@ Response response;
 
     @Given("Setting avatar of the user")
     public void settingAvatarOfTheUser() throws IOException {
+        System.out.println(Signup.imageurl);
+        System.out.println(Signup.userid);
         requestSpecification=given()
-                .spec(requestSpecification()).header("token",Signup.token).body(userpayload.avatarpayload(imageurl,userid));
+                .spec(requestSpecification()).header("token",Signup.token).body(userpayload.avatarpayload(Signup.imageurl,Signup.userid));
     }
 
     @When("Setting avatar with patch request {string}")
     public void settingAvatarWithPatchRequest(String endurl) {
     APIResources apiResources=APIResources.valueOf(endurl);
-    response=requestSpecification.when().patch(apiResources.getResource());
+    response=requestSpecification.when().post(apiResources.getResource());
 
     }
 
     @Then("Checking avatar set successfully")
     public void checkingAvatarSetSuccessfully() {
         assertEquals(response.getStatusCode(),200);
-     String avatarresp=   response.then().extract().response().asString();
-        JsonPath avatarjson = Utils.rawtojson(avatarresp);
-    String rawreferral = avatarjson.getString("data.referralLink");
-        System.out.println(rawreferral);
+//     String avatarresp=   response.then().extract().response().asString();
+//        JsonPath avatarjson = Utils.rawtojson(avatarresp);
+//    String rawreferral = avatarjson.getString("data.referralCode");
+//        System.out.println(rawreferral);
 
     }
 

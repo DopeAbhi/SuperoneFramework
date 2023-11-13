@@ -13,7 +13,8 @@ public enum APIResources {
     verify_referral("/writer/v3/user/verifyReferral"),
     set_username("/writer/v3/user/updateUserName"),
     set_firstname_lastname("/writer/v3/user/100706/updateUserInfo"),
-    set_avatar("/writer/user/update-avatar");
+    set_avatar("/writer/user/update-avatar"),
+    get_walletdata("/reader/members/get/walletdata");
 
     private String resources;
 
