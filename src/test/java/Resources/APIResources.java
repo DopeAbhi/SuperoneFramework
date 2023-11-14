@@ -14,7 +14,8 @@ public enum APIResources {
     set_username("/writer/v3/user/updateUserName"),
     set_firstname_lastname("/writer/v3/user/100706/updateUserInfo"),
     set_avatar("/writer/user/update-avatar"),
-    get_walletdata("/reader/members/get/walletdata");
+    get_walletdata("/reader/members/get/walletdata"),
+    member_search("/reader/member/searchmemberbyreferralcode");
 
     private String resources;
 
