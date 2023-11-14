@@ -12,7 +12,7 @@ public class Transferpayload {
              "}";
     }
 
-    public static String Transferpayload(String memberid ,int amount)
+    public static String Transfer(String memberid ,int amount)
 
     {
         return "{\n" +

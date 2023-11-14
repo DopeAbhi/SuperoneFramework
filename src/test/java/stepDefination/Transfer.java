@@ -8,6 +8,8 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.given;
+import static org.testng.AssertJUnit.assertEquals;
+
 import  Resources.*;
 import Payloads.*;
 
@@ -56,7 +58,7 @@ public class Transfer extends Utils {
         APIResources apiResources=APIResources.valueOf(endurl);
         response=requestSpecification.when().get(apiResources.getResource());
     }
-
+//Sender settings details
     @Then("Checking sender wallet data status")
     public void checkingSenderWalletDataStatus() {
         String walletresponse= response.then().extract().response().asString();
@@ -65,6 +67,30 @@ public class Transfer extends Utils {
         System.out.println(freebalance);
 
     }
+    //Checking Setting
+    @Given("Getting sender settings details")
+    public void gettingSenderSettingsDetails() throws IOException {
+        requestSpecification=given().spec(requestSpecification()).header("Token",Transfer.sendertoken);
+
+    }
+
+    @When("Sender settings with get request {string}")
+    public void senderSettingsWithGetRequest(String endurl) {
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response=requestSpecification.when().get(apiResources.getResource());
+    }
+
+    @Then("Checking sender settings status")
+    public void checkingSenderSettingsStatus() {
+        String settingResponse=response.then().log().all().extract().response().asString();
+        JsonPath settingjson=Utils.rawtojson(settingResponse);
+        String otpstatus= settingjson.getString("data.getallsecuritypreferences.WITHDRAW_TRANSFER");
+        System.out.println(otpstatus);
+
+
+    }
+
+
 
 //Receiver Login
     @Given("Receiver credentials {string} and {string}")
@@ -110,5 +136,28 @@ public class Transfer extends Utils {
     memberid=searchjson.getString("data.members[0].id");
 
     }
+
+//Transfer
+    @Given("Transfer details {string}")
+    public void transferDetailsAnd(String amount) throws IOException {
+     requestSpecification=   given().header("Token",Transfer.sendertoken)
+                .spec(requestSpecification().body(Transferpayload.Transfer(memberid,(int)Double.parseDouble(amount))));
+    }
+
+    @When("Transfer with post request {string}")
+    public void transferWithPostRequest(String endurl) {
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response=requestSpecification.when().post(apiResources.getResource());
+
+    }
+
+    @Then("Checking transfer status")
+    public void checkingTransferStatus() {
+        assertEquals(response.statusCode(),200);
+        response.then().log().all();
+
+    }
+
+
 }
 

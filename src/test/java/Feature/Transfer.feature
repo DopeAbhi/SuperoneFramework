@@ -14,6 +14,10 @@ Feature: Testing Transfer
     When Sender wallet data with get request "get_walletdata"
     Then Checking sender wallet data status
 
+    Scenario: Sender Settings
+      Given Getting sender settings details
+      When Sender settings with get request "checking_settings"
+      Then Checking sender settings status
 
   Scenario Outline: Receiver Login
     Given Receiver credentials "<Email>" and "<Password>"
@@ -31,9 +35,9 @@ Feature: Testing Transfer
 
 
     Scenario Outline: Transfer
-      Given Transfer details "<Amount>" and "<Receiver>"
+      Given Transfer details "<Amount>"
       When Transfer with post request "transfer"
-      Then Checking transfer status and extracting transfer id
+      Then Checking transfer status
       Examples:
-        | Amount | Receiver |
-        | 10000 | max6521@y.com |
+        | Amount |
+        | 10 |

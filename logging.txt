@@ -19,7 +19,7 @@ Body:
     "recaptchaToken": ""
 }
 HTTP/1.1 200 OK
-Date: Mon, 13 Nov 2023 08:22:10 GMT
+Date: Tue, 14 Nov 2023 07:35:39 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -27,13 +27,13 @@ Access-Control-Allow-Origin: undefined
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
 Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
-ETag: W/"43e-ciKuOmbeNR+l19nmrvRkDzcbb0E"
-Set-Cookie: sails.sid=s%3A2c_17E-qOBwPtM79STTiENJimcTMbkMw.nCviyJNL7TF0zcxO1AWd2%2F8pD9z64cIGBAKjWxYRdMI; Path=/; HttpOnly
+ETag: W/"403-roE3U+J++RhGvIzp6CSQN1raivU"
+Set-Cookie: sails.sid=s%3ARid2uV9gV3fk7D-iE8-lyCCEbkqFWnrq.AdjyoCo5%2B3nu%2FzdH6Ln5nLPvOAFcRToyvD9ENgt%2BVI8; Path=/; HttpOnly
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BUTbGTbypVDY4f9XKDT2ibhz80QHzR5p8JW2QZQe4MccE3vXZOW8HJGu%2F5h%2FPDCjm7Ll4ruGx%2FlkOUDaX3CEnTk53VWN8oV5hIQkkNdAw6Mo4WoCHNCbHPNswZRPfJZ%2FJqnzLOcM"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WEYo4sousyZg95OiyGpZLOGlYeJoEnuw%2BYpKKz%2FiMd9tk7uN1ZMphcZOt6CQiNMzxhPk9bjy3vCBn39z%2B7PDjd7Cviv3KzVuJj6DltMng3iDcVX8wWkLDtBAxpGHpL%2BSpi8xYCq9"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 82559afa2b002af8-DEL
+CF-RAY: 825d943458cf2b0d-DEL
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
@@ -55,10 +55,8 @@ alt-svc: h3=":443"; ma=86400
         "countryCode": "+91",
         "socialDone": false,
         "nextAction": "NONE",
-        "uniqueReferenceId": "",
         "member": 120498,
-        "memberUniqueReferenceId": "",
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NywiaWF0IjoxNjk5ODYzNzMwLCJleHAiOjE3MDI0NTU3MzB9.t6J8urWPzuzgqXoCLZhVinsIcWEnzK1cQqelaDBYfX0",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NywiaWF0IjoxNjk5OTQ3MzM5LCJleHAiOjE3MDI1MzkzMzl9.95QZQVAlhTUPKL6A09OYUQ6Z1jCAyb5l27PR3oh1Xjo",
         "memberType": "FREE",
         "isPasscodeSet": false,
         "passwordSet": true,
@@ -69,7 +67,7 @@ alt-svc: h3=":443"; ma=86400
         "isNewUser": false,
         "appLang": "en",
         "gameLang": "en",
-        "lastLogout": "GAME"
+        "lastLogout": "AFFILIATE"
     }
 }
 Request method:	GET
@@ -79,7 +77,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NywiaWF0IjoxNjk5ODYzNzMwLCJleHAiOjE3MDI0NTU3MzB9.t6J8urWPzuzgqXoCLZhVinsIcWEnzK1cQqelaDBYfX0
+Headers:		Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NywiaWF0IjoxNjk5OTQ3MzM5LCJleHAiOjE3MDI1MzkzMzl9.95QZQVAlhTUPKL6A09OYUQ6Z1jCAyb5l27PR3oh1Xjo
 				device-Type=WEB
 				Accept=*/*
 				Content-Type=application/json
@@ -87,7 +85,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 13 Nov 2023 08:22:12 GMT
+Date: Tue, 14 Nov 2023 07:35:41 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -96,13 +94,13 @@ Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
 Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
 X-Powered-By: Sails <sailsjs.com>
-ETag: W/"258-ENkLrHxh3eBBbmSWDVjF4SutrBU"
-Set-Cookie: sails.sid=s%3Avy-SodS9i0L53sMtk6ljKsU2Q9dXk8GF.Y6Nx6SXiZ7nVaPFeLvWSvinToUyj8Wx2%2FpFil8uLRL8; Path=/; HttpOnly
+ETag: W/"268-Ik6MG0b39haSnzj/uARnym9ZOrY"
+Set-Cookie: sails.sid=s%3AUFnZQqTYYWPpCt2gfJKi132eJME13Msv.t6VcZGUXcmIuln1DHbHBXfPQgKxVE05eDGWK%2Fojxyqc; Path=/; HttpOnly
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ojSY1IAjH0yStN6OLTLBYmJc9xcKdxIr5%2BVe8nPvjhTMZnVRjkGTqbFvpWGjmJQzyVeelHpu3ubqZoFmza4zR0tF1DG5nU96W7C1MMaDgDGOmlPtdffig5SmcUOTKgBn3RbnzzLO"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NwvEuRCt75OFz5Rf5jv3owrJFDA92jcLrYod4jHn0fOzrYZlZX48Duw%2Fd88A60geE11t3l0G8SPFZnisVHObvfdkePsVoDeF5LDGsmnCo6v8hkxmrcfDgEHwg3i6bqyIJ3zEiySN"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 82559b075a502afb-DEL
+CF-RAY: 825d943f6d162aff-DEL
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
@@ -112,11 +110,11 @@ alt-svc: h3=":443"; ma=86400
     "display": false,
     "data": {
         "Balance": {
-            "balanceInDollar": 0,
-            "freeBalance": 0,
+            "balanceInDollar": 99980,
+            "freeBalance": 99980,
             "lockedBalance": 0,
-            "value": 0,
-            "recent": 0,
+            "value": 99980,
+            "recent": 99980,
             "active": true
         },
         "Super": {
@@ -140,5 +138,273 @@ alt-svc: h3=":443"; ma=86400
             "active": false
         },
         "memberType": "FREE"
+    }
+}
+Request method:	GET
+Request URI:	https://quickdev3.super.one/reader/user/104947/setting
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NywiaWF0IjoxNjk5OTQ3MzM5LCJleHAiOjE3MDI1MzkzMzl9.95QZQVAlhTUPKL6A09OYUQ6Z1jCAyb5l27PR3oh1Xjo
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 07:35:41 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+X-Powered-By: Sails <sailsjs.com>
+ETag: W/"4bb-6FmX/MusEfYhJvIHJmLH512geRo"
+Set-Cookie: sails.sid=s%3AEFFy5qrsYjewor9E1OcZMxDZZYb7vFdx.ZU3A%2FY%2FrL4DhrcQNcoj%2FyZFTTtPs8qu5XotJvkDLoFU; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EQftc9Hxkm0Dt02pyh4wZSjnOyRAc4S7bz6eqgxW5sb%2BEIjWb2K10S6skD25q4kH9tX%2Ft9W3boHEda00c1q1DHl3yEQm6xph1wipd5RjEUOPJPtMN4k8ynnARDN5VtYQ%2B%2FJw2t1a"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 825d9443bcde2afb-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Success",
+    "success": true,
+    "display": false,
+    "data": {
+        "rewards": {
+            "Internal": true,
+            "External": [
+                
+            ]
+        },
+        "subscribeMarketing": true,
+        "messageEnable": true,
+        "listethaddresses": [
+            
+        ],
+        "getallsecuritypreferences": {
+            "LOGIN": 0,
+            "WITHDRAW_TRANSFER": 0,
+            "SETTING": 1
+        },
+        "socialShowHide": {
+            "facebook": true,
+            "google": true,
+            "twitter": true,
+            "apple": true
+        },
+        "getMemberDownlineSupportPreference": {
+            "isEmailVerified": 1,
+            "isMobileNoVerified": 0,
+            "preferences": {
+                "direct": 1,
+                "team": 1
+            }
+        },
+        "id": 104947,
+        "email": "max6523@y.com",
+        "mobileNo": "",
+        "firstName": "max6523",
+        "lastName": "test",
+        "emailVerified": 1,
+        "mobileNoVerified": 0,
+        "imageUrl": "https://d2sve40ue2b0nm.cloudfront.net/avatar/a072f8b3-0bc6-457e-b664-1bff990f3b69.webp",
+        "countryName": "India",
+        "countryFlagImage": "",
+        "dateOfBirth": "",
+        "countryCode": "+91",
+        "facebookId": "",
+        "twitterId": "",
+        "appleId": "",
+        "googleId": "",
+        "nextAction": "NONE",
+        "isPasscodeSet": false,
+        "passwordSet": true,
+        "member": 120498
+    }
+}
+Request method:	PATCH
+Request URI:	https://quickdev3.super.one/writer/user/email/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "deviceToken": "",
+    "deviceType": "WEB",
+    "email": "max6521@y.com",
+    "password": "Test@123",
+    "recaptchaToken": ""
+}
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 07:35:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"403-Lm6Qm2T3ICwLYZGcmkXry9qe1tc"
+Set-Cookie: sails.sid=s%3AVVB7zOA8wS852gaWWIM3lI79hZAveXlR.4jDRssY9lHQ%2FIu5x3LQm%2BmYycNVW%2F5xogH0LeWA87E0; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BMOPPARM53gcG3EPSFt48NWQaE8TsBMR0MBFhBV2QedwGGHPfNev9SZ0bpkCdRkOuZqyJ1GSeGwZDImidW0jJFFzVBui5XeR1SzLbgDd1LhpEZGz8EmyRLkxhf%2FKFsen6q2MiUZa"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 825d944f4c9c2b0f-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Logged in with email.",
+    "success": true,
+    "display": false,
+    "data": {
+        "id": 104945,
+        "email": "max6521@y.com",
+        "mobileNo": null,
+        "firstName": "max6521",
+        "lastName": "test",
+        "imageUrl": "https://d2sve40ue2b0nm.cloudfront.net/avatar/9e266607-d70c-4596-ad71-6bcbd553221b.webp",
+        "countryName": "India",
+        "countryFlagImage": null,
+        "mobileNoVerified": false,
+        "emailVerified": true,
+        "countryCode": "+91",
+        "socialDone": false,
+        "nextAction": "NONE",
+        "member": 120496,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NSwiaWF0IjoxNjk5OTQ3MzQzLCJleHAiOjE3MDI1MzkzNDN9.uVFZPjneQM3gTM4smNlKinHheOqh5AUCmhpM7QBtenU",
+        "memberType": "FREE",
+        "isPasscodeSet": false,
+        "passwordSet": true,
+        "userName": "max6521",
+        "referralCode": "FeTIDyncT4",
+        "referralLink": "https://dw99y.app.link/FeTIDyncT4",
+        "updateReferral": true,
+        "isNewUser": false,
+        "appLang": "en",
+        "gameLang": "en",
+        "lastLogout": "AFFILIATE"
+    }
+}
+Request method:	POST
+Request URI:	https://quickdev3.super.one/reader/member/searchmemberbyreferralcode
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NywiaWF0IjoxNjk5OTQ3MzM5LCJleHAiOjE3MDI1MzkzMzl9.95QZQVAlhTUPKL6A09OYUQ6Z1jCAyb5l27PR3oh1Xjo
+				device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "limit": 10,
+    "pageNo": 0,
+    "referralCode": "FeTIDyncT4"
+}
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 07:35:45 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+X-Powered-By: Sails <sailsjs.com>
+ETag: W/"18a-G1l+IA5Xk32DkU7owGHWMBvV11I"
+Set-Cookie: sails.sid=s%3ABnTjzue2O-pBN6rR3sjOAjcclxeBt9G4.BSIFfPPes6EucYhG0t8WC9abyrLRP38gwsnno0uf6ms; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=J5l0%2FAZ8UO9K3uDCfoRZ79BZ6KMd5NjYUYYZl85AvaV0J3qK4Q9S%2BYMbwJ27l0HAF1qVgEztQY9LfvDC%2B6eWjvYiffg5KXxWV8Mmk2BhdrFZjQv2Yx7l6e1WaFqqCWB0FIv7rcim"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 825d9454ee7c2af8-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Success",
+    "success": true,
+    "display": false,
+    "data": {
+        "count": 1,
+        "members": [
+            {
+                "referralCode": "FeTIDyncT4",
+                "name": "max6521 test",
+                "id": 120496,
+                "userId": 104945,
+                "countryName": "India",
+                "avatar": "https://d2sve40ue2b0nm.cloudfront.net/avatar/9e266607-d70c-4596-ad71-6bcbd553221b.webp"
+            }
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://quickdev3.super.one/writer/v3/user/100623/transfer
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwNDk0NywiaWF0IjoxNjk5OTQ3MzM5LCJleHAiOjE3MDI1MzkzMzl9.95QZQVAlhTUPKL6A09OYUQ6Z1jCAyb5l27PR3oh1Xjo
+				device-Type=WEB
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "amount": 10,
+    "isReserve": false,
+    "medium": "MOBILE",
+    "receiverId": 120496,
+    "requestId": ""
+}
+HTTP/1.1 200 OK
+Date: Tue, 14 Nov 2023 07:35:46 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: undefined
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH
+Access-Control-Allow-Headers: Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, content-type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Token, Device-Type, Bypass-W3villa-areyxukcyb, Uuid
+ETag: W/"5b-8cJxspBB64r2oVPcDttW3sMFpUs"
+Set-Cookie: sails.sid=s%3ATNtR7EtXDUf-Wku2ujD0KmzRvndZ62mW.wnLQ0aznJg04r5hlp8zD7JgdyRVFojwo%2FdTq0v%2FTPqk; Path=/; HttpOnly
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CElXyLmejIGuidUao9UbpDmfP549wfh3Wqn2f9lc8xgobAXiDdzKdm61kqYsAD8FrpdZlhhtFYRTg%2BDSlmsfAuvI%2B6cXyAMHj7CHetFflBu3xeJShDVrVL4b9gKx5JSDoQLxMTCd"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 825d9461cd722b0e-DEL
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "message": "Amount transferred.",
+    "success": true,
+    "display": false,
+    "data": {
+        
     }
 }
