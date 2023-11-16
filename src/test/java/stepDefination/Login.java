@@ -25,48 +25,49 @@ public class Login extends Utils {
     ResponseSpecification responseSpecification;
      Response response;
 
+    @Given("Checking user status with {string}")
+    public void checkingUserStatusWith(String email) throws IOException {
 
-       requestSpecification= given().spec(requestSpecification())
-                .body(userpayload.userstatuspayload("max600@y.com"));
+        requestSpecification = given().spec(requestSpecification())
+                .body(userpayload.userstatuspayload(email));
+    }
 
+    @When("user calls {string} with post request")
+    public void userCallsWithPostRequest(String endurl) {
 
-
-        APIResources resourcesAPI=APIResources.valueOf(resources); //enum implementation
+        APIResources resourcesAPI = APIResources.valueOf(endurl); //enum implementation
         System.out.println(resourcesAPI.getResource());
 
-        response=requestSpecification.when().post(resourcesAPI.getResource());
+        response = requestSpecification.when().post(resourcesAPI.getResource());
+
+    }
+    @Then("Checking status of user status")
+    public void checkingStatusOfUserStatus() {
+
+        assertEquals(response.getStatusCode(), 200);
+
+    }
 
 
-        assertEquals(response.getStatusCode(),200);
-
-
-
-
-
+    @Given("User Login with {string}")
+    public void userLoginWith(String email) throws IOException {
         requestSpecification= given().spec(requestSpecification())
-            .body(userpayload.userstatuspayload("max600@y.com"));
+                .body(userpayload.userstatuspayload(email));
 
+    }
 
-
-
-        APIResources resourcesAPI=APIResources.valueOf(resources); //enum implementation
+    @When("Login with Patch {string} request")
+    public void loginWithPatchRequest(String endurl) {
+        APIResources resourcesAPI=APIResources.valueOf(endurl); //enum implementation
         System.out.println(resourcesAPI.getResource());
         response=requestSpecification.when().patch(resourcesAPI.getResource());
 
+    }
 
-
+    @Then("the API call got success status code")
+    public void theAPICallGotSuccessStatusCode() {
         assertEquals(response.getStatusCode(),200);
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 }

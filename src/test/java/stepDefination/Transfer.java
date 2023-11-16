@@ -159,5 +159,31 @@ public class Transfer extends Utils {
     }
 
 
+
+
+    //Receiver Wallet Data
+    @Given("Getting receiver wallet data")
+    public void gettingReceiverWalletData() throws IOException {
+        System.out.println(Transfer.receivertoken);
+        requestSpecification=  given().header("Token",Transfer.receivertoken).spec(requestSpecification());
+    }
+
+    @When("Receiver wallet data with get request {string}")
+    public void receiverWalletDataWithGetRequest(String endurl) {
+
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response=requestSpecification.when().get(apiResources.getResource());
+    }
+    //Sender settings details
+    @Then("Checking receiver wallet data status")
+    public void checkingReceiverWalletDataStatus() {
+        String receiver_walletresponse= response.then().extract().response().asString();
+        JsonPath receiver_walletjson = Utils.rawtojson(receiver_walletresponse);
+        String receiver_freebalance = receiver_walletjson.getString("data.Balance.freeBalance");
+        System.out.println(receiver_freebalance);
+
+    }
+
+
 }
 

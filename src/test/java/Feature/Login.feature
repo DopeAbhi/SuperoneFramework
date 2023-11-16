@@ -8,7 +8,7 @@ Feature: Validating login
     Then Checking status of user status
     Examples:
       | Email |
-      |max6521@y.com |
+      |ABB1@gmail.com |
 
   @Regression
  Scenario Outline: Login
@@ -17,4 +17,4 @@ Feature: Validating login
     Then the API call got success status code
     Examples:
       | Email |
-      |max6521@y.com |
+      |ABB1@gmail.com |

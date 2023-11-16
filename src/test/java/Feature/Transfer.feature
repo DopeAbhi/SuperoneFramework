@@ -41,3 +41,8 @@ Feature: Testing Transfer
       Examples:
         | Amount |
         | 10 |
+
+  Scenario: Getting Receiver Wallet Details
+    Given Getting receiver wallet data
+    When Receiver wallet data with get request "get_walletdata"
+    Then Checking receiver wallet data status
