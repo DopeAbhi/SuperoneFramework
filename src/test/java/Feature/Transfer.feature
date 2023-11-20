@@ -6,13 +6,18 @@ Feature: Testing Transfer
     Then Checking user login status and extracting token
     Examples:
       | Email | Password |
-      | max6523@y.com | Test@123 |
+      | ABB1@gmail.com | Test@123 |
 
 
   Scenario: Getting Sender Wallet Details
     Given Getting sender wallet data
     When Sender wallet data with get request "get_walletdata"
     Then Checking sender wallet data status
+
+    Scenario: Checking Transfer OTP settings
+      Given Checking transfer OTP settings
+      When Checking transfer OTP settings with get request "get_transfer_otp_settings"
+      Then Checking transfer OTP settings status
 
     Scenario: Sender Settings
       Given Getting sender settings details
@@ -25,7 +30,7 @@ Feature: Testing Transfer
     Then Checking user login status and extracting token & referral
     Examples:
       | Email | Password |
-      | max6521@y.com | Test@123 |
+      | max6529@y.com | Test@123 |
 
 
   Scenario: Searching User for Transfer

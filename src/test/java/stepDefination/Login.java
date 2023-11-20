@@ -8,6 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -24,6 +25,7 @@ public class Login extends Utils {
     RequestSpecification requestSpecification;
     ResponseSpecification responseSpecification;
      Response response;
+     static String token;
 
     @Given("Checking user status with {string}")
     public void checkingUserStatusWith(String email) throws IOException {
@@ -67,6 +69,10 @@ public class Login extends Utils {
     @Then("the API call got success status code")
     public void theAPICallGotSuccessStatusCode() {
         assertEquals(response.getStatusCode(),200);
+        String login_response=response.then().log().all().extract().response().asString();
+        JsonPath loginjson=Utils.rawtojson(login_response);
+        token = loginjson.getString("data.token");
+        System.out.println(token);
     }
 
 

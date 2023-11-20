@@ -23,6 +23,7 @@ public class Transfer extends Utils {
     static String receivertoken;
     static String receiver_referralcode;
     static String memberid;
+   static String otp_status;
 
     // Sender Login
     @Given("Sender credentials {string} and {string}")
@@ -44,6 +45,26 @@ public class Transfer extends Utils {
         sendertoken = loginjson.getString("data.token");
         System.out.println(sendertoken);
     }
+    //Checking OTP settings
+    @Given("Checking transfer OTP settings")
+    public void checkingTransferOTPSettings() throws IOException {
+        requestSpecification=given().spec(requestSpecification()).header("Token",sendertoken);
+    }
+
+    @When("Checking transfer OTP settings with get request {string}")
+    public void checkingTransferOTPSettingsWithGetRequest(String endurl) {
+        APIResources apiResources=APIResources.valueOf(endurl);
+        response=requestSpecification.when().get(apiResources.getResource());
+    }
+
+    @Then("Checking transfer OTP settings status")
+    public void checkingTransferOTPSettingsStatus() {
+        String settingResponse=response.then().log().all().extract().response().asString();
+        JsonPath settingjson=Utils.rawtojson(settingResponse);
+       otp_status=settingjson.getString("getallsecuritypreferences.WITHDRAW_TRANSFER");
+    }
+
+
 
     //Sender Wallet Data
     @Given("Getting sender wallet data")
@@ -58,7 +79,7 @@ public class Transfer extends Utils {
         APIResources apiResources=APIResources.valueOf(endurl);
         response=requestSpecification.when().get(apiResources.getResource());
     }
-//Sender settings details
+
     @Then("Checking sender wallet data status")
     public void checkingSenderWalletDataStatus() {
         String walletresponse= response.then().extract().response().asString();
@@ -183,6 +204,7 @@ public class Transfer extends Utils {
         System.out.println(receiver_freebalance);
 
     }
+
 
 
 }
